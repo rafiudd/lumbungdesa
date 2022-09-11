@@ -67,6 +67,7 @@
               >Beli Sekarang</v-btn
             >
           </v-row>
+          <br><br><br><br>
         </v-flex>
       </v-container>
     </div>
