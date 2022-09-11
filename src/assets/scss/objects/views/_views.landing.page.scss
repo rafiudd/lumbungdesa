@@ -63,6 +63,33 @@
     }
   }
 
+  &__program {
+    background-image: url('https://res.cloudinary.com/duh8crgew/image/upload/v1662912843/lumbungdesa/images/landing-page/satu_desa_satu_produk.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 15%;
+    height: 100vh;
+
+    &__content {
+      // background-color: #ffffff;
+      width: 65%;
+      padding: 40px;
+
+      @include bp(0, $break-md) {
+        margin-top: 60px;
+      }
+
+      h1, p {
+        font-family: $font-secondary;
+        color: #29291e;
+      }
+
+      p {
+        font-weight: 400;
+      }
+    }
+  }
+
   &__product {
     background: rgba(52, 84, 77, 0.15);
     padding-top: 100px;

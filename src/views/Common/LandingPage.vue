@@ -71,6 +71,28 @@
         </v-flex>
       </v-container>
     </div>
+
+    <div class="v-landing-page__program">
+      <v-row class="mr-0 ml-0" justify="center" align="center">
+        <div class="v-landing-page__program__content u-w-md-full-width u-w-52per text-center">
+          <h1 class="font-weight-bold u-fs-44 u-color-white">
+            Program 1 Desa 1 Produk
+          </h1>
+          <p class="mt-4 u-fs-18 u-line-height-30 u-fs-md-16 u-color-white">
+            Program satu desa 1 produk adalah sebuah program dimana para penduduk lokal mengembangkan sebuah produk maupun jasa yang akan menjadi produk khas dan kebanggaan wilayah lokal mereka, sehingga memiliki nilai kompetitif baik di pasar nasional maupun global. Dengan program ini Indonesia akan maju dalam bidang ekonomi kreatif.
+          </p>
+        </div>
+      </v-row>
+            <v-row class="mr-0 ml-0" justify="center" align="center" >
+            <v-btn
+              color="#F58328"
+              width="200"
+              dark
+              class="px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2"
+              >Dukung Program</v-btn
+            >
+          </v-row>
+    </div>
   
     <v-container class="v-landing-page__about-us" id="about-us">
       <v-layout align-center wrap>
