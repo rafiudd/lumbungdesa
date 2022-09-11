@@ -15,6 +15,62 @@
         </div>
       </v-container>
     </div>
+
+    <div class="v-landing-page__about">
+      <v-container mt-0 pt-0>
+        <div class="v-landing-page__about__content u-color-white u-w-md-full-width u-w-52per">
+          <h1 class="font-weight-bold u-fs-44">
+            Apa itu LumbungDesa?
+          </h1>
+          <p class="mt-4 u-fs-18 u-line-height-30 u-fs-md-16 ">
+            LumbungDesa adalah sebuah platform untuk menjembatani desa ke kancah dunia, dimana semua potensi lokal yang ada, baik produk maupun kebudayaan yang ada di desa bisa di ekspose melalui platform LumbungDesa. Harapanya dengan adanya LumbungDesa permintaan produksi semakin naik dan masyarakat desa bisa mendapat lebih banyak pendapatan.
+          </p>
+        </div>
+      </v-container>
+    </div>
+
+    <div class="v-landing-page__product">
+      <v-container mt-0 pt-0>
+        <ModuleLihatSemua
+          title="Produk Terbaik Desa"
+          description="LumbungDesa mempromosikan produk desa terbaik dari seluruh desa di Indonesia kepada dunia sehingga bisa dikenal mayarakat luas"
+          href=""
+        />
+        
+        <ModuleProductsHome />
+
+
+        <v-flex mt-10>
+          <h3 class="u-fs-24 justify-center text-center">Kerajinan Lidi Khas Banyumas</h3>
+          <v-row justify="center" align="center">
+            <v-col cols="12" sm="8">
+              <p class="v-landing-page__product-description text-center mb-0">Terdapat sebuah kesan mendalam di setiap bagian nya, dengan lengkungan kriwil membuat kerajinan ini menjadi unik dan menarik.</p>
+            </v-col>
+          </v-row>
+
+          <v-row justify="center" align="center">
+            <v-col align="right">
+              <span class="v-landing-page__product-label u-fs-12">Mulai Dari</span>
+              <p class="text-decoration-line-through">Rp. 6.000</p>
+            </v-col>
+            <v-col>
+              <p class="v-landing-page__product-price u-fs-24">Rp. 4.499</p>
+            </v-col>
+          </v-row>
+
+          <v-row justify="center" align="center" >
+            <v-btn
+              color="#F58328"
+              width="300"
+              dark
+              class="px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2"
+              >Beli Sekarang</v-btn
+            >
+          </v-row>
+        </v-flex>
+      </v-container>
+    </div>
+  
     <v-container class="v-landing-page__about-us" id="about-us">
       <v-layout align-center wrap>
         <v-flex xs12 md6>
@@ -40,16 +96,20 @@
 <script>
 import ModuleNavbarLanding from '@/components/_module/ModuleNavbarLanding'
 import ModuleFooter from '@/components/_module/ModuleFooter'
+import ModuleLihatSemua from '@/components/_module/ModuleLihatSemua.vue'
+import ModuleProductsHome from '@/components/_module/ModuleProductsHome.vue'
 
 export default {
   components: {
     ModuleNavbarLanding,
     ModuleFooter,
+    ModuleLihatSemua,
+    ModuleProductsHome
   },
 
   data() {
     return {
-      listStep: [
+        listStep: [
         {
           id: 0,
           title: 'Daftarkan dirimu melalui Kontak Kami di bawah',

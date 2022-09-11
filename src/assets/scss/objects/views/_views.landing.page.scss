@@ -29,6 +29,132 @@
     }
   }
 
+  &__about {
+    background-image: url('https://res.cloudinary.com/duh8crgew/image/upload/v1662876320/lumbungdesa/images/landing-page/about_umkxzy.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    // padding-bottom: 186px;
+    padding-top: 286px;
+    height: 90vh;
+    // background-position-y: -100px;
+
+    @include bp(0, $break-md) {
+      background-position-y: 0;
+    padding-top: 106px;
+    }
+
+    &__content {
+      background-color: #ffffff;
+      width: 65%;
+      padding: 40px;
+
+      @include bp(0, $break-md) {
+        margin-top: 60px;
+      }
+
+      h1, p {
+        font-family: $font-secondary;
+        color: #29291e;
+      }
+
+      p {
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__product {
+    background: rgba(52, 84, 77, 0.15);
+    padding-top: 100px;
+    height: 150vh;
+
+    h3 {
+      font-weight: 600 !important;
+    }
+    h1, h3, p {
+      font-family: $font-secondary;
+      color: #29291e;
+    }
+
+    p {
+      font-weight: 400;
+    }
+
+    .row .flex:first-child {
+      padding-left: 0px !important;
+    }
+    
+    .row .flex:last-child {
+      padding-right: 0px !important;
+    }
+
+    .v-image {
+      height: 540px;
+    }
+
+    .v-landing-page__product-label {
+      margin-right: 14px !important;
+      font-family: 'Avenir';
+    }
+
+    .v-landing-page__product-price {
+      font-family: 'Avenir';
+      font-weight: bold;
+    }
+
+    @include bp(0, $break-md) {
+      background-position-y: 0;
+      padding-top: 106px;
+
+
+      .row .flex:first-child {
+        padding-left: 0px !important;
+      }
+      
+      .row .flex:last-child {
+        padding-right: 0px !important;
+      }
+      .v-image {
+        height: 300px;
+      }
+    }
+
+
+    @include bp(0, $break-sm) {
+
+      .row .flex:nth-child(odd) {
+        padding-left: 0px !important;
+      }
+      
+      .row .flex:nth-child(even) {
+        padding-right: 0px !important;
+      }
+
+      .v-image {
+        height: 50%;
+      }
+    }
+
+    &__content {
+      background-color: #ffffff;
+      width: 65%;
+      padding: 40px;
+
+      @include bp(0, $break-md) {
+        margin-top: 60px;
+      }
+
+      h1, p {
+        font-family: $font-secondary;
+        color: #29291e;
+      }
+
+      p {
+        font-weight: 400;
+      }
+    }
+  }
+
   .tagar {
     font-family: 'Avenir';
     font-style: normal;

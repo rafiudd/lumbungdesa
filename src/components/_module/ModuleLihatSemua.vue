@@ -1,0 +1,31 @@
+<template class="m-lihat-semua">
+  <v-layout align-center wrap>
+    <v-flex>
+      <h1>
+        {{title}}
+      </h1>
+      <p class="m-lihat-semua__description">
+        {{description}}
+      </p>
+    </v-flex>
+    
+    <v-flex class="text-right">
+      <v-btn
+        color="#F58328"
+        dark
+        class="m-lihat-semua__button px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2"
+        >Lihat Semua</v-btn
+      >
+    </v-flex>
+  </v-layout>
+</template>
+
+<script>
+export default {
+  props: [
+    'title',
+    'description',
+    'href'
+  ]
+}
+</script>

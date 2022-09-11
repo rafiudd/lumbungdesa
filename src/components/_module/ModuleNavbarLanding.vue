@@ -6,7 +6,7 @@
     <v-container class="pt-4 pb-4">
       <v-layout align-center justify-space-between>
         <div class="m-navbar-landing__logo u-pointer mt-2" @click="goToSection('header')">
-          <img :src="logo" v-bind:alt="Logo" />
+          <img :src="logo" alt="Logo" />
         </div>
 
         <div class="m-navbar-landing__lists align-center justify-between d-none d-md-flex">
