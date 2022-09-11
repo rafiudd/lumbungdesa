@@ -18,13 +18,13 @@
       }
 
       h1 {
-        font-family: $font-secondary;
+        font-family: "Avenir";
       }
       .button--cta {
         border: 1px solid white !important;
         width: 166px !important;
         height: 50px !important;
-        font-family: $font-secondary;
+        font-family: "Avenir";
       }
     }
   }
@@ -53,7 +53,7 @@
       }
 
       h1, p {
-        font-family: $font-secondary;
+        font-family: "Avenir";
         color: #29291e;
       }
 
@@ -80,7 +80,7 @@
       }
 
       h1, p {
-        font-family: $font-secondary;
+        font-family: "Avenir";
         color: #29291e;
       }
 
@@ -99,7 +99,7 @@
       font-weight: 600 !important;
     }
     h1, h3, p {
-      font-family: $font-secondary;
+      font-family: "Avenir";
       color: #29291e;
     }
 
@@ -172,13 +172,39 @@
       }
 
       h1, p {
-        font-family: $font-secondary;
+        font-family: "Avenir";
         color: #29291e;
       }
 
       p {
         font-weight: 400;
       }
+    }
+  }
+
+  &__keterampilan {
+    // background: rgba(52, 84, 77, 0.15);
+    padding-top: 100px;
+    height: auto;
+
+    h3 {
+      font-weight: 600 !important;
+    }
+    h1, h3, p {
+      font-family: "Avenir";
+      color: #29291e;
+    }
+    .v-landing-page_keterampilan-tab {
+      color: black !important;
+      font-family: "Avenir" !important;
+    }
+    .v-tab:not(.v-tab-active) {
+      color: black !important;
+      font-family: "Avenir" !important;
+    }
+    .v-tab-active {
+      background-color: blue !important;
+      font-family: "Avenir" !important;
     }
   }
 

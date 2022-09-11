@@ -39,7 +39,6 @@
         
         <ModuleProductsHome />
 
-
         <v-flex mt-10>
           <h3 class="u-fs-24 justify-center text-center">Kerajinan Lidi Khas Banyumas</h3>
           <v-row justify="center" align="center">
@@ -83,16 +82,84 @@
           </p>
         </div>
       </v-row>
-            <v-row class="mr-0 ml-0" justify="center" align="center" >
-            <v-btn
-              color="#F58328"
-              width="200"
-              dark
-              class="px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2"
-              >Dukung Program</v-btn
-            >
-          </v-row>
+      <v-row class="mr-0 ml-0" justify="center" align="center" >
+        <v-btn
+          color="#F58328"
+          width="200"
+          dark
+          class="px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2"
+          >Dukung Program
+        </v-btn>
+      </v-row>
     </div>
+
+    <div class="v-landing-page__keterampilan">
+      <v-container mt-0 pt-0>
+        <ModuleLihatSemua
+          title="Pelatihan Keterampilan"
+          description="LumbungDesa menyediakan berbagai pelatihan keterampilan secara online maupun offline tanpa biaya 100% gratis."
+          href=""
+        />
+      <v-card>
+        <v-tabs
+          v-model="tab"
+          background-color="white"
+          color="#BA5300"
+          center-active
+          dark
+        >
+          <v-tab class="v-landing-page_keterampilan-tab">Pelatihan Online</v-tab>
+          <v-tab>Pelatihan Offline</v-tab>
+        </v-tabs>
+
+      </v-card>
+       
+    <v-tabs-items v-model="tab" class="mt-5">
+      <v-tab-item
+        v-for="item in items"
+        :key="item.tab"
+      >
+        <v-card flat>
+          <v-container>
+            <v-row>
+              <v-col sm="12" xs="12" md="4" align="left" class="u-no-p">
+                <img src="https://res.cloudinary.com/duh8crgew/image/upload/v1662915710/lumbungdesa/pelatihan/pelatihan-1_xot6hf.png" alt="">
+              </v-col>
+              <v-col sm="12" xs="12" md="6" align="left" class="u-no-p">
+                <h5>Pelatihan Membuat Menjadi Barista</h5>
+                <p>Pemerintah Desa Jatilawang bekerjasama dengan dinas tenaga kerja membuat sebuah untuk mengadakan workshop "Pelatihan Membuat Barista Kopi Kapal API Indonesia”....</p>
+                <a href="">Daftar Sekarang</a>
+              </v-col>
+              <v-col sm="12" xs="12" md="2" class="u-no-p" align="right">
+                <h5>21 September 2019</h5>
+                <h4>Desa Jatilawang, <br> Banyumas</h4>
+              </v-col>
+            </v-row>
+          </v-container>
+          <v-card-text>{{ item.content }}</v-card-text>
+        </v-card>
+      </v-tab-item>
+    </v-tabs-items>
+
+
+      </v-container>
+    </div>
+
+      <v-container class="v-landing-page__desa-international" id="desa-international">
+        <v-layout align-center wrap>
+          <v-flex xs12 md6>
+            <h1 class="font-weight-bold u-fs-44">
+              Desa Go Internasional
+            </h1>
+            <p class="mt-4 u-fs-18 u-line-height-30 u-fs-md-16 ">
+              Melalui program #desagointernational produk-produk terbaik desa akan dibantu untuk bisa ekspor ke luar negeri, sehingga suatu saat nanti produk lokal Indonesia akan menguasai pasar global.
+            </p>
+          </v-flex>
+          <v-flex xs12 md6 class="u-pl-md-0 u-pl-120 mt-6 mt-md-0">
+            <img src="@/assets/images/content_1.png" alt="content_1" class="u-full-width" />
+          </v-flex>
+        </v-layout>
+      </v-container>
   
     <v-container class="v-landing-page__about-us" id="about-us">
       <v-layout align-center wrap>
@@ -100,17 +167,36 @@
           <img src="@/assets/images/content_1.png" alt="content_1" class="u-full-width" />
         </v-flex>
         <v-flex xs12 md6 class="u-pl-md-0 u-pl-120 mt-6 mt-md-0">
-          <h2 class="u-fs-34 u-font-nobile">
-            Kenapa memilih Labbaik Virtual Tour ?
-          </h2>
-          <p class="mt-4 u-fs-18 u-line-height-30 u-fs-md-16 ">
-            Labbaik Virtuar Tour hadir membawa solusi untuk masyarakat yang ingin mengunjungi Tempat-tempat bersejarah
-            agama Islam tetapi terhalang oleh waktu dan keterbatasan lainnya. Dengan memanfaatkan kecanggihan teknologi
-            sekarang ini anda hanya duduk diam di rumah dan dapat merasakan pengalaman ke luar negeri.
-          </p>
+          <h1 class="font-weight-bold u-fs-44">
+              Mempersiapkan Desa Budaya yang Berdaya
+            </h1>
+            <p class="mt-4 u-fs-18 u-line-height-30 u-fs-md-16 ">
+              Pemajuan kebudayaan desa merupakan platform bersama membangun desa mandiri melalui peningkatan ketahanan budaya dan kontribusi budaya desa di tengah peradaban dunia.
+            </p>
         </v-flex>
       </v-layout>
     </v-container>
+
+    <div class="v-landing-page__program">
+      <v-row class="mr-0 ml-0" justify="center" align="center">
+        <div class="v-landing-page__program__content u-w-md-full-width u-w-52per text-center">
+          <h1 class="font-weight-bold u-fs-44 u-color-white">
+            Pencak Silat, Desa Gerbo, Pasuruan, Jawa Timur
+          </h1>
+        </div>
+      </v-row>
+    </div>
+
+    <div class="v-landing-page__keterampilan">
+      <v-container mt-0 pt-0>
+        <ModuleLihatSemua
+          title="Desa Budaya"
+          description="Bersama LumbungDesa Desa Berdaya dengan Budaya yang ada. Jangan sampai budaya desa menghilang tanpa jejak. Sekarang semua terdokumentasi di LumbungDesa"
+          href=""
+        />
+      </v-container>
+    </div>
+
 
     <ModuleFooter />
   </div>
@@ -132,38 +218,12 @@ export default {
 
   data() {
     return {
-        listStep: [
-        {
-          id: 0,
-          title: 'Daftarkan dirimu melalui Kontak Kami di bawah',
-        },
-        {
-          id: 1,
-          title: 'Tentukan Tour Kota mana yang kamu inginkan',
-        },
-        {
-          id: 2,
-          title: 'Lengkapi data dirimu',
-        },
-        {
-          id: 3,
-          title: 'Lakukan pembayaran sesuai tour yang kamu pilih',
-        },
-        {
-          id: 4,
-          title: 'Admin mengkonfirmasi pembayaran kamu',
-        },
-        {
-          id: 5,
-          title: 'Kamu akan diberikan link zoom untuk tour kota sesuai pilihanmu',
-        },
-        {
-          id: 6,
-          title: 'Selamat menikmati Labbaik Virtual Tour',
-        },
-      ],
-
-      isDialogOpen: false,
+        tab: null,
+        items: [
+          { tab: 'One', content: 'Tab 1 Content' },
+          { tab: 'Two', content: 'Tab 2 Content' },
+        ],
+        isDialogOpen: false,
     }
   },
 
