@@ -126,8 +126,8 @@ export default {
     },
     logo() {
         return this.scrollPosition > 98
-               ? require('https://res.cloudinary.com/duh8crgew/image/upload/v1662866966/lumbungdesa/images/logo/colored_logo_trdx7e.svg')
-               : require('https://res.cloudinary.com/duh8crgew/image/upload/v1662866961/lumbungdesa/images/logo/logo_potrhm.svg');
+               ? 'https://res.cloudinary.com/duh8crgew/image/upload/v1662866966/lumbungdesa/images/logo/colored_logo_trdx7e.svg'
+               : 'https://res.cloudinary.com/duh8crgew/image/upload/v1662866961/lumbungdesa/images/logo/logo_potrhm.svg';
     }
   },
 
