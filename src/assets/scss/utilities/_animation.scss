@@ -1,0 +1,28 @@
+.u-slide-fade-up-enter-active {
+  transition: all 0.1s ease-in;
+}
+
+.u-slide-fade-up-leave-active {
+  transform: translateY(-10px);
+  transition: all 0.1s ease-out;
+}
+
+.u-slide-fade-up-enter,
+.u-slide-fade-up-to {
+  transform: translateY(-10px);
+  opacity: 0;
+}
+
+.u-list-enter-active,
+.list-leave-active {
+  transition: all 1s;
+}
+
+.u-list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.flip-list-move {
+  transition: transform 1s;
+}

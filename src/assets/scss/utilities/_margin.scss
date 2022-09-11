@@ -1,0 +1,155 @@
+.v-application {
+  // --- Margin top class --- //
+
+  .u-mt-2 {
+    margin-top: 2px !important;
+  }
+
+  .u-mt-6 {
+    margin-top: 6px !important;
+  }
+
+  .u-mt-9 {
+    margin-top: 9px !important;
+  }
+
+  .u-mt-10 {
+    margin-top: 10px !important;
+  }
+
+  .u-mt-15 {
+    margin-top: 15px !important;
+  }
+
+  .u-mt-20 {
+    margin-top: 20px !important;
+  }
+
+  .u-mt-30 {
+    margin-top: 30px !important;
+  }
+
+  .u-mt-35 {
+    margin-top: 35px !important;
+  }
+
+  .u-mt-50 {
+    margin-top: 50px !important;
+  }
+
+  .u-mt-70 {
+    margin-top: 70px !important;
+  }
+
+  .u-mt-95 {
+    margin-top: 95px !important;
+  }
+
+  .u-mt-neg-16 {
+    margin-top: -16px !important;
+  }
+
+  .u-mt-neg-40 {
+    margin-top: -40px !important;
+  }
+
+  // --- Margin bottom class --- //
+  .u-mb-2 {
+    margin-bottom: 2px !important;
+  }
+
+  .u-mb-6 {
+    margin-bottom: 6px !important;
+  }
+
+  .u-mb-10 {
+    margin-bottom: 10px !important;
+  }
+
+  .u-mb-15 {
+    margin-bottom: 15px !important;
+  }
+
+  .u-mb-20 {
+    margin-bottom: 20px !important;
+  }
+
+  .u-mb-70 {
+    margin-bottom: 70px !important;
+  }
+
+  // -- Margin left class -- //
+  .u-ml-05em {
+    margin-left: 0.5em !important;
+  }
+
+  .u-ml-10 {
+    margin-left: 10px !important;
+  }
+
+  .u-ml-15 {
+    margin-left: 15px !important;
+  }
+
+  .u-ml-42 {
+    margin-left: 42px !important;
+  }
+
+  .u-mr-05em {
+    margin-right: 0.5em !important;
+  }
+
+  .u-mr-15 {
+    margin-right: 15px !important;
+  }
+
+  .u-mr-5 {
+    margin-right: 5px !important;
+  }
+
+  // --- responsive class --- //
+  // md: tablet
+  @include bp(0, 989px) {
+    .u-ml-md-0 {
+      margin-left: 0 !important;
+    }
+  }
+
+  // sp
+  @include bp(0, 768px) {
+    .u-sp-mb-0 {
+      margin-bottom: 0px !important;
+    }
+    .u-sp-ml-0 {
+      margin-left: 0px !important;
+    }
+  }
+
+  // sm
+  @include bp(0, 600px) {
+    .u-sm-mt-30 {
+      margin-top: 30px !important;
+    }
+  }
+
+  // tab let up
+  @include bp(769px, 0) {
+    .u-tl-up-mt-80 {
+      margin-top: 80px !important;
+    }
+    .u-tl-up-mt-50 {
+      margin-top: 50px !important;
+    }
+  }
+
+  // sm
+  @include bp(600px, 0) {
+    .u-mt-sm-80 {
+      margin-top: 80px !important;
+    }
+
+    .u-mt-sm-40 {
+      margin-top: 40px !important;
+    }
+  }
+}

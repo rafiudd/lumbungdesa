@@ -1,0 +1,21 @@
+.v-authentication {
+  max-height: 100vh;
+  overflow: hidden;
+
+  &__left {
+    max-width: 310px;
+    padding-bottom: 25px;
+    @include bp(0, $break-md){
+      max-width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    &__tabs {
+      border-bottom: 1px solid #dddcda;
+      .v-tab {
+        text-transform: capitalize;
+        margin: 0 20px;
+      }
+    }
+  }
+}

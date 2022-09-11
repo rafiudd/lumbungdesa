@@ -1,0 +1,92 @@
+.v-application {
+  .u-fs-9 {
+    font-size: 9px !important;
+  }
+
+  .u-fs-10 {
+    font-size: 10px !important;
+  }
+
+  .u-fs-11 {
+    font-size: 11px !important;
+  }
+
+  .u-fs-12 {
+    font-size: 12px !important;
+  }
+
+  .u-fs-13 {
+    font-size: 13px !important;
+  }
+
+  .u-fs-14 {
+    font-size: 14px !important;
+  }
+
+  .u-fs-15 {
+    font-size: 15px !important;
+  }
+
+  .u-fs-16 {
+    font-size: 16px !important;
+  }
+
+  .u-fs-18 {
+    font-size: 18px !important;
+  }
+
+  .u-fs-20 {
+    font-size: 20px !important;
+  }
+
+  .u-fs-24 {
+    font-size: 24px !important;
+  }
+
+  .u-fs-30 {
+    font-size: 30px !important;
+  }
+
+  .u-fs-34 {
+    font-size: 34px !important;
+  }
+
+  .u-fs-48 {
+    font-size: 48px !important;
+  }
+
+  .u-fs-075 {
+    font-size: 0.75rem !important;
+  }
+
+  .u-fs-80-per {
+    font-size: 80% !important;
+  }
+
+  @include bp(0, $break-md) {
+    .u-fs-md-16 {
+      font-size: 16px !important;
+    }
+    .u-fs-md-18 {
+      font-size: 18px !important;
+    }
+    .u-fs-md-24 {
+      font-size: 24px !important;
+    }
+  }
+
+  @include bp(600px, 0) {
+    .u-fs-sm-14 {
+      font-size: 14px !important;
+    }
+    .u-fs-sm-16 {
+      font-size: 16px !important;
+    }
+    .u-fs-sm-20 {
+      font-size: 20px !important;
+    }
+    .u-fs-sm-30 {
+      font-size: 30px !important;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.m-navbar-landing {
+  background-color: transparent;
+  transition: 0.2s all ease-out;
+  font-weight: 300;
+  font-family: 'Avenir';
+
+  &.navbar--scrolled {
+    transition: 0.2s all ease-in;
+    background-color: white !important;
+    -webkit-box-shadow: 0px 1px 20px 0px rgba(153, 152, 152, 0.5);
+    -moz-box-shadow: 0px 1px 20px 0px rgba(153, 152, 152, 0.5);
+    box-shadow: 0px 1px 20px 0px rgba(153, 152, 152, 0.5);
+
+    p {
+      color: #52575a !important;
+    }
+  }
+
+  &__lists {
+    .list--item {
+      cursor: pointer;
+      position: relative;
+      height: 100%;
+      p {
+        color: white;
+      }
+      p::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        bottom: -20px;
+        left: 0;
+        // background-color: #F58328;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out 0s;
+      }
+      p:hover::before {
+        visibility: visible;
+        transform: scaleX(1);
+      }
+    }
+    .active--nav {
+      p::before {
+        visibility: visible;
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  
+.v-list {
+  position: relative;
+  .v-list-item {
+    cursor: pointer;
+    position: relative;
+    .v-list-item__title::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      margin: 0 auto;
+      height: 2px;
+      left: 0;
+      bottom: 0;
+      // background-color: #F58328;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out 0s;
+    }
+    .v-list-item__title:hover::before {
+      visibility: visible;
+      transform: scaleX(1);
+    }
+  }
+}
+
+}

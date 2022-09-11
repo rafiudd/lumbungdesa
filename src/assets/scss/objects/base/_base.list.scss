@@ -1,0 +1,41 @@
+.b-list {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #b8b8b8;
+  .no--border{
+    border: none !important;
+    color: #62b74b;
+  }
+  .additional--padding{
+    padding-left: 40px;
+  }
+  &__number {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid #62b74b;
+    box-sizing: border-box;
+  }
+
+  .btn--selengkapnya {
+    p {
+      color: #396b2b;
+    }
+  }
+
+  &__wrapper-button {
+    justify-content: flex-end;
+
+    @include bp(0, $break-sm) {
+      justify-content: start;
+      margin-top: 20px;
+
+      .btn--selengkapnya {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.v-application {
+  .u-text-center {
+    text-align: center !important;
+  }
+
+  .u-text-right {
+    text-align: right !important;
+  }
+
+  .u-text-left {
+    text-align: left !important;
+  }
+
+  .u-vertical-align-sub {
+    vertical-align: sub !important;
+  }
+
+  .u-capitalize {
+    text-transform: capitalize !important;
+  }
+
+  .u-lowercase {
+    text-transform: lowercase !important;
+  }
+
+  .u-uppercase {
+    text-transform: uppercase !important;
+  }
+
+  .no-uppercase {
+    text-transform: unset !important;
+  }
+
+  .u-fw-semi-bold {
+    font-weight: 600;
+  }
+
+  .u-fw-bold {
+    font-weight: 700;
+  }
+
+  .u-italic {
+    font-style: italic !important;
+  }
+
+  .u-normal {
+    font-style: normal !important;
+  }
+
+  .u-fstretch-normal {
+    font-stretch: normal !important;
+  }
+
+  .u-text-decoration-none {
+    text-decoration: none !important;
+  }
+
+  .u-text-decoration-underline {
+    text-decoration: underline !important;
+  }
+
+  .u-nowrap {
+    white-space: nowrap;
+  }
+
+  .u-pre-wrap {
+    white-space: pre-wrap;
+  }
+
+  .u-pre-line {
+    white-space: pre-line;
+  }
+
+  .u-word-break {
+    word-break: break-all;
+    word-break: break-word;
+  }
+
+  .u-sub-text {
+    max-width: 220px;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .u-overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .u-first-uppercase {
+    &:first-letter {
+      text-transform: capitalize !important;
+    }
+  }
+
+  .u-text-1line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  .u-text-2line {
+    @extend .u-text-1line;
+    -webkit-line-clamp: 2;
+  }
+
+  .u-line-height-150per {
+    line-height: 150%;
+  }
+
+  .u-line-height-30 {
+    line-height: 30px;
+  }
+
+  .u-font-nobile {
+    font-family: $font-secondary;
+  }
+
+  .u-letter-spacing-0 {
+    letter-spacing: 0;
+  }
+}

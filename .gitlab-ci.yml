@@ -1,0 +1,22 @@
+image: node:latest
+
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  artifacts:
+    paths:
+      - dist/
+  script:
+    - yarn install
+    - yarn build
+
+deploy:
+  stage: deploy
+  tags:
+    - sh
+  script:
+    - rm -rf $WWW/*
+    - cp -R dist/. $WWW

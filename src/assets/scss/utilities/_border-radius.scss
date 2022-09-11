@@ -1,0 +1,37 @@
+.v-application {
+  .u-border-round {
+    border-radius: 100vw !important;
+  }
+
+  .u-radius-0 {
+    border-radius: 0 !important;
+  }
+
+  .u-radius-3 {
+    border-radius: 3px !important;
+  }
+
+  .u-border-radius-6 {
+    border-radius: 6px !important;
+  }
+
+  .u-border-radius-10 {
+    border-radius: 10px !important;
+  }
+
+  .u-radius-tl-0 {
+    border-top-left-radius: 0px !important;
+  }
+
+  .u-radius-tr-0 {
+    border-top-right-radius: 0px !important;
+  }
+
+  .u-radius-br-2 {
+    border-bottom-right-radius: 2px !important;
+  }
+
+  .u-radius-bl-2 {
+    border-bottom-left-radius: 2px !important;
+  }
+}

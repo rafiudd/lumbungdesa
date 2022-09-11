@@ -1,0 +1,32 @@
+.m-footer {
+  background-color: #f5f5f5;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-top: 120px;
+
+  &__bottom-bar {
+    padding: 40px 0;
+    border-left: 1px solid #b8b8b8;
+    .list--bottom-bar {
+      @include bp(0, $break-md) {
+        flex-direction: column !important;
+      }
+    }
+    @include bp(0, $break-md) {
+      border-left: none;
+      p {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        margin-top: 24px;
+      }
+    }
+    p:first-of-type {
+      margin-left: 32px;
+    }
+    p {
+      color: #7a7a7a;
+      font-weight: bold;
+      margin-right: 24px;
+    }
+  }
+}
