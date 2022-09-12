@@ -278,17 +278,87 @@
     }
   }
 
-  .tagar {
-    font-family: 'Avenir';
-    font-style: normal;
-    line-height: 35px;
-    font-weight: 200;
-    font-size: 25px;
-    color: rgba(255, 255, 255, 0.8);
+  &__desa-budaya {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
+
+    h3 {
+      font-weight: 600 !important;
+    }
+    h1, h3, p {
+      font-family: "Avenir";
+      color: #29291e;
+    }
+    .v-landing-page__desa-budaya-href {
+      font-family: 'Avenir';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      text-decoration-line: underline;
+      color: #D3A263;
+    }
+    .v-landing-page__desa-budaya-img {
+      position: absolute;
+    }
+    .v-landing-page__desa-budaya-title {
+      position: absolute;
+      z-index: 99;
+      margin-top: 20%;
+      right: 26px;
+      width: 400px;
+      font-size: 40px;
+    }
   }
 
-  hr {
-    width: 15%;
+  &__desa {
+    // padding-top: 10vh;
+    padding-bottom: 50vh;
+    height: auto;
+
+    h3 {
+      font-weight: 600 !important;
+    }
+    h1, h3, p {
+      font-family: "Avenir";
+      color: #29291e;
+    }
+    .v-landing-page__desa-href {
+      font-family: 'Avenir';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      text-decoration-line: underline;
+      color: #D3A263;
+    }
+    .v-landing-page__desa-img {
+      position: absolute;
+      width: auto;
+    }
+    .v-landing-page__desa-title {
+      position: absolute;
+      z-index: 5;
+      margin-top: 22.5vh;
+      right: 5vh;
+      width: 500px;
+      font-size: 40px;
+      background-color: #29291e;
+      color: white;
+      padding: 75px 60px;
+    }
+    @include bp(0, $break-sm) {
+      .v-landing-page__desa-img {
+        width: 100%;
+      }
+      .v-landing-page__desa-title {
+        width: 100%;
+        font-size: 24px;
+        padding: 30px 40px;
+        right: 3vh;
+      }
+    }
   }
 
   &__desa-international {
@@ -308,6 +378,16 @@
     p {
       font-weight: 400;
     }
+
+    .v-landing-page__desa-international-href {
+      font-family: 'Avenir';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      text-decoration-line: underline;
+      color: #D3A263;
+    }
     
     .v-landing-page__desa-international-img {
       margin-left: 30px;
@@ -325,166 +405,16 @@
     }
   }
 
-
-  &__about-us {
-    margin-top: 120px;
-
-    @include bp(0, $break-md) {
-      margin-top: 60px;
-
-      img {
-        width: 100%;
-        height: 440px;
-      }
-    }
-
-    @include bp(0, $break-sm) {
-      img {
-        height: 250px;
-      }
-    }
+  .tagar {
+    font-family: 'Avenir';
+    font-style: normal;
+    line-height: 35px;
+    font-weight: 200;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.8);
   }
 
-  &__service {
-    position: relative;
-    margin-top: 120px;
-    z-index: 1;
-
-    h2 {
-      position: relative;
-      z-index: 99;
-    }
-
-    @include bp(0, $break-md) {
-      margin-top: 60px;
-    }
-
-    &__cards {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 40px;
-      margin-top: 32px;
-      position: relative;
-      z-index: 99;
-
-      @include bp(0, $break-md) {
-        grid-template-columns: 1fr;
-      }
-
-      .card--service {
-        padding: 32px;
-        background-color: white;
-        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.04), 0px 32px 70px rgba(0, 0, 0, 0.08);
-        border-radius: 8px;
-      }
-    }
-
-    .image--polygon {
-      z-index: 0;
-      top: -120px;
-
-      @include bp(0, $break-md) {
-        top: 20px;
-
-        img {
-          width: 216px;
-        }
-      }
-    }
-  }
-
-  &__register {
-    margin-top: 120px;
-
-    @include bp(0, $break-md) {
-      margin-top: 60px;
-    }
-
-    &__image {
-      border-radius: 10px;
-      background-image: url('~@/assets/images/content_2.png');
-      height: 610px;
-      width: 395px;
-      background-size: cover;
-      background-repeat: no-repeat;
-
-      @include bp(0, 1263px) {
-        width: 100%;
-      }
-
-      @include bp(0, $break-md) {
-        height: 216px;
-        background-position-y: -350px;
-      }
-
-      @include bp(0, $break-sm) {
-        background-position-y: -200px;
-      }
-    }
-    &__text {
-      @include bp($break-md, 1263px) {
-        padding-left: 30px;
-      }
-    }
-  }
-  &__testimonials {
-    margin-top: 120px;
-
-    @include bp(0, $break-md) {
-      margin-top: 60px;
-    }
-
-    &__title {
-      margin-bottom: 30px;
-    }
-
-    &__cards {
-      display: grid;
-      grid-gap: 52px;
-      grid-template-columns: repeat(2, 1fr);
-      position: relative;
-      top: -80px;
-
-      @include bp(0, $break-md) {
-        grid-template-columns: 1fr;
-        top: 0;
-        grid-gap: 30px;
-      }
-      .card--testimonials {
-        padding: 42px;
-        background: #ffffff;
-        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.04), 0px 32px 70px rgba(0, 0, 0, 0.08);
-        border-radius: 8px;
-      }
-
-      .card--testimonials:nth-child(1) {
-        position: relative;
-        top: calc(150px);
-        @include bp(0, $break-md) {
-          top: 0;
-        }
-      }
-
-      .card--testimonials:nth-child(3) {
-        grid-column: 2/3;
-
-        @include bp(0, $break-md) {
-          grid-column: unset;
-        }
-      }
-    }
-  }
-
-  &__contact-us {
-    background-image: url('~@/assets/images/contact-us.png');
-    background-size: cover;
-    border-radius: 12px;
-    padding: 80px 134px;
-    margin-top: 120px;
-
-    @include bp(0, $break-md) {
-      margin-top: 60px;
-      padding: 42px;
-    }
+  hr {
+    width: 15%;
   }
 }

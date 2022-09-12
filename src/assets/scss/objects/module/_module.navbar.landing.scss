@@ -1,18 +1,18 @@
 .m-navbar-landing {
   background-color: transparent;
   transition: 0.2s all ease-out;
-  font-weight: 300;
+  font-weight: 400;
   font-family: 'Avenir';
 
   &.navbar--scrolled {
     transition: 0.2s all ease-in;
     background-color: white !important;
-    -webkit-box-shadow: 0px 1px 20px 0px rgba(153, 152, 152, 0.5);
-    -moz-box-shadow: 0px 1px 20px 0px rgba(153, 152, 152, 0.5);
-    box-shadow: 0px 1px 20px 0px rgba(153, 152, 152, 0.5);
+    -webkit-box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.15);;
+    -moz-box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.15);;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.15);;
 
     p {
-      color: #52575a !important;
+      color: #29291e !important;
     }
   }
 
