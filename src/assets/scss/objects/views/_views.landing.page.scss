@@ -148,7 +148,6 @@
 
 
     @include bp(0, $break-sm) {
-
       .row .flex:nth-child(odd) {
         padding-left: 0px !important;
       }
@@ -195,16 +194,87 @@
       color: #29291e;
     }
     .v-landing-page_keterampilan-tab {
+      // color: black !important;
+      font-family: "Avenir" !important;
+    }
+    .v-tab {
       color: black !important;
       font-family: "Avenir" !important;
     }
-    .v-tab:not(.v-tab-active) {
-      color: black !important;
+    .v-tab--active {
+      color: white !important;
+      background-color: #BA5300 !important;
       font-family: "Avenir" !important;
     }
-    .v-tab-active {
-      background-color: blue !important;
-      font-family: "Avenir" !important;
+    .v-landing-page__keterampilan-card {
+      border-bottom: 1px solid #D9D9D9 !important;
+    }
+    .v-tabs-slider-wrapper {
+      height: 50px !important;
+      position: absolute !important;
+      z-index: 0;
+    }
+
+    .v-landing-page_keterampilan-cardlist {
+      margin: 0px !important;
+    }
+    .v-landing-page_keterampilan-cardlist img {
+      width: 100%;
+      height: 200px;
+    }
+    .v-landing-page_keterampilan-cardlist h5, a {
+      margin-left: 20px;
+    }
+
+    .v-landing-page_keterampilan-cardlist h5 {
+      font-family: 'Avenir';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 40px;
+    }
+    .v-landing-page_keterampilan-cardlist h4 {
+      font-family: 'Avenir';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 27px;
+      color: #D3A263;
+    }
+    .v-landing-page_keterampilan-cardlist a {
+      font-family: 'Avenir';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      text-decoration-line: underline;
+      color: #D3A263;
+    }
+    .v-landing-page_keterampilan-cardlist-desc {
+      margin-left: 20px;
+    }
+
+    @include bp(0, $break-sm) {
+      .v-landing-page_keterampilan-col {
+        flex-wrap: wrap;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+      }
+
+      .v-landing-page_keterampilan-cardlist-none {
+        display: none;
+      }
+
+      .v-landing-page_keterampilan-cardlist h5 {
+        line-height: 30px;
+      }
+      .v-landing-page_keterampilan-cardlist-desc {
+        margin-left: 0px;
+      }
+      .v-landing-page_keterampilan-cardlist h5, a {
+        margin-left: 0px;
+      }
     }
   }
 
@@ -220,6 +290,42 @@
   hr {
     width: 15%;
   }
+
+  &__desa-international {
+    background: rgba(52, 84, 77, 0.15);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: auto;
+
+    h3 {
+      font-weight: 600 !important;
+    }
+    h1, h3, p {
+      font-family: "Avenir";
+      color: #29291e;
+    }
+
+    p {
+      font-weight: 400;
+    }
+    
+    .v-landing-page__desa-international-img {
+      margin-left: 30px;
+    }
+
+    @include bp(0, $break-sm) {
+      .v-landing-page__desa-international-img {
+        margin-left: 0px;
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      .v-landing-page__desa-international-flex {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+
   &__about-us {
     margin-top: 120px;
 

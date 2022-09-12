@@ -100,7 +100,7 @@
           description="LumbungDesa menyediakan berbagai pelatihan keterampilan secara online maupun offline tanpa biaya 100% gratis."
           href=""
         />
-      <v-card>
+      <v-card class="v-landing-page__keterampilan-card mt-5" flat>
         <v-tabs
           v-model="tab"
           background-color="white"
@@ -108,58 +108,58 @@
           center-active
           dark
         >
-          <v-tab class="v-landing-page_keterampilan-tab">Pelatihan Online</v-tab>
-          <v-tab>Pelatihan Offline</v-tab>
+          <v-tab class="v-landing-page_keterampilan-tab no-uppercase">Online</v-tab>
+          <v-tab class="no-uppercase">Offline</v-tab>
         </v-tabs>
-
       </v-card>
        
-    <v-tabs-items v-model="tab" class="mt-5">
-      <v-tab-item
-        v-for="item in items"
-        :key="item.tab"
-      >
-        <v-card flat>
-          <v-container>
-            <v-row>
-              <v-col sm="12" xs="12" md="4" align="left" class="u-no-p">
-                <img src="https://res.cloudinary.com/duh8crgew/image/upload/v1662915710/lumbungdesa/pelatihan/pelatihan-1_xot6hf.png" alt="">
-              </v-col>
-              <v-col sm="12" xs="12" md="6" align="left" class="u-no-p">
-                <h5>Pelatihan Membuat Menjadi Barista</h5>
-                <p>Pemerintah Desa Jatilawang bekerjasama dengan dinas tenaga kerja membuat sebuah untuk mengadakan workshop "Pelatihan Membuat Barista Kopi Kapal API Indonesia”....</p>
-                <a href="">Daftar Sekarang</a>
-              </v-col>
-              <v-col sm="12" xs="12" md="2" class="u-no-p" align="right">
-                <h5>21 September 2019</h5>
-                <h4>Desa Jatilawang, <br> Banyumas</h4>
-              </v-col>
-            </v-row>
-          </v-container>
-          <v-card-text>{{ item.content }}</v-card-text>
-        </v-card>
-      </v-tab-item>
-    </v-tabs-items>
-
+      <v-tabs-items v-model="tab" class="">
+        <v-tab-item
+          v-for="item in items"
+          :key="item.tab"
+        >
+          <v-card flat>
+            <v-container class="v-landing-page_keterampilan-cardlist">
+              <v-row v-for="data in keterampilan" :key="data.title" class="mt-4">
+                <v-col sm="12" md="4" align="left" class="u-no-p v-landing-page_keterampilan-col">
+                  <img :src="data.img_url" :alt="data.title">
+                </v-col>
+                <v-col md="5" align="left" class="u-no-p mt-1 v-landing-page_keterampilan-col">
+                  <h5>{{ data.title }}</h5>
+                  <p class="v-landing-page_keterampilan-cardlist-desc">{{data.description}}</p>
+                  <a href="#">Daftar Sekarang</a>
+                </v-col>
+                <v-col class="v-landing-page_keterampilan-cardlist-none u-no-p mt-1" md="3" align="right">
+                  <h5>{{data.date}}</h5>
+                  <h4>{{data.village}}, <br> {{data.districts}}</h4>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-card>
+        </v-tab-item>
+      </v-tabs-items>
 
       </v-container>
     </div>
-
-      <v-container class="v-landing-page__desa-international" id="desa-international">
-        <v-layout align-center wrap>
-          <v-flex xs12 md6>
+    <br><br><br><br>
+    <div class="v-landing-page__desa-international mt-10" id="desa-international">
+      <v-container>
+        <v-layout align-center wrap class="v-landing-page__desa-international-flex">
+          <v-flex xs12 md5>
             <h1 class="font-weight-bold u-fs-44">
               Desa Go Internasional
             </h1>
             <p class="mt-4 u-fs-18 u-line-height-30 u-fs-md-16 ">
               Melalui program #desagointernational produk-produk terbaik desa akan dibantu untuk bisa ekspor ke luar negeri, sehingga suatu saat nanti produk lokal Indonesia akan menguasai pasar global.
             </p>
+            <a href="#">Lihat Selengkapnya</a>
           </v-flex>
-          <v-flex xs12 md6 class="u-pl-md-0 u-pl-120 mt-6 mt-md-0">
-            <img src="@/assets/images/content_1.png" alt="content_1" class="u-full-width" />
+          <v-flex xs12 md7 class="">
+            <img class="v-landing-page__desa-international-img" src="https://res.cloudinary.com/duh8crgew/image/upload/v1662952986/lumbungdesa/images/landing-page/image_9_1_n3wlej.png" alt="content_1" />
           </v-flex>
         </v-layout>
       </v-container>
+    </div>
   
     <v-container class="v-landing-page__about-us" id="about-us">
       <v-layout align-center wrap>
@@ -222,6 +222,32 @@ export default {
         items: [
           { tab: 'One', content: 'Tab 1 Content' },
           { tab: 'Two', content: 'Tab 2 Content' },
+        ],
+        keterampilan: [
+          {
+            title: 'Pelatihan Menjadi Barista',
+            description: 'Pemerintah Desa Jatilawang bekerjasama dengan dinas tenaga kerja membuat sebuah untuk mengadakan workshop "Pelatihan Membuat Barista Kopi Kapal API Indonesia”....',
+            date: '21 September 2022',
+            village: 'DESA GENTAWANGI',
+            districts: 'YOGYAKARTA',
+            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1662915710/lumbungdesa/pelatihan/pelatihan-1_xot6hf.png'
+          },
+          {
+            title: 'Pelatihan Membuat Gerabah',
+            description: 'Gerabah merupakan karya seni terapan yang difungsikan untuk memenuhi kebutuhan masyarakat sehari-hari. Gerabah menghasilkan perkakas rumah tangga atau alat rumah tangga seperti  kendi...',
+            date: '29 September 2022',
+            village: 'DESA JATILAWANG',
+            districts: 'BANYUMAS',
+            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1662951436/lumbungdesa/pelatihan/image_30_l7swpk.png'
+          },
+          {
+            title: 'Pelatihan Membuat Kerajinan Lidi Expert',
+            description: 'Lidi hanyalah limbah tak berharga tetapi dengan berbekal ilmu keterampilan menganyam, lidi yang tadinya limbah bisa disulap menjadi berbagai macam kerajinan yang bernilai ekonomi dengan daya jual yang tinggi.......',
+            date: '18 Oktober 2022',
+            village: 'DESA KEDUNGWRINGIN',
+            districts: 'BANYUMAS',
+            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1662951410/lumbungdesa/pelatihan/1618465115515_1_xuypvd.png'
+          }
         ],
         isDialogOpen: false,
     }
