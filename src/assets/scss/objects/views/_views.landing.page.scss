@@ -3,10 +3,8 @@
     background-image: url('~@/assets/images/bg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    // padding-bottom: 186px;
     padding-top: 286px;
     height: 100vh;
-    // background-position-y: -100px;
 
     @include bp(0, $break-md) {
       background-position-y: 0;
@@ -34,14 +32,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 286px;
-    height: 90vh;
+    height: 100vh;
     @include bp(0, $break-md) {
       background-position-y: 0;
       padding-top: 106px;
     }
 
     &__content {
-      background-color: #ffffff;
+      background-color: #282828;
       width: 65%;
       padding: 40px;
 
@@ -51,7 +49,7 @@
 
       h1, p {
         font-family: "Avenir";
-        color: #29291e;
+        color: #fff;
       }
 
       p {
@@ -68,7 +66,6 @@
     height: 100vh;
 
     &__content {
-      // background-color: #ffffff;
       width: 65%;
       padding: 40px;
 
@@ -179,7 +176,6 @@
   }
 
   &__keterampilan {
-    // background: rgba(52, 84, 77, 0.15);
     padding-top: 100px;
     height: auto;
 
@@ -191,7 +187,6 @@
       color: #29291e;
     }
     .v-landing-page_keterampilan-tab {
-      // color: black !important;
       font-family: "Avenir" !important;
     }
     .v-tab {
@@ -200,7 +195,7 @@
     }
     .v-tab--active {
       color: white !important;
-      background-color: #BA5300 !important;
+      background-color: #F58328 !important;
       font-family: "Avenir" !important;
     }
     .v-landing-page__keterampilan-card {
@@ -453,24 +448,14 @@
         padding-right: 5px !important;
       }
 
-      .days {
-        // text-align: left;
-        // margin-bottom: 0px;
-        // padding: 0px;
-      }
-
       .layout-card {
         margin-top: 0px !important;
         margin-bottom: 0px !important;
         padding: 0px !important;
       }
-      .flex-days {
-        // padding-top: 0px !important;
-      }
     }
 
     &__content {
-      // background-color: #ffffff;
       width: 65%;
       padding: 40px;
       margin-top: 850px;
@@ -504,7 +489,6 @@
       .v-landing-page__csr-btn-1 {
         margin-right: 0px !important;
         padding: 0px !important;
-        // width: 100% !important;
       }
 
       .v-landing-page__csr-btn-group {
@@ -516,9 +500,7 @@
     }
 
     &__content {
-      // background-color: #ffffff;
       width: 60%;
-      // padding: 40px;
       margin-top: 200px;
 
       @include bp(0, $break-md) {
