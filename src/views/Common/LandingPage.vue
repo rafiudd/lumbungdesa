@@ -259,11 +259,11 @@
         </div>
       </v-row>
         <div justify="center" align="center" class="mt-10">
-        <img src="https://res.cloudinary.com/duh8crgew/image/upload/v1663035764/lumbungdesa/images/landing-page/image_17_cnjn6x.png" alt="">
+        <img class="v-landing-page__csr-img" src="https://res.cloudinary.com/duh8crgew/image/upload/v1663035764/lumbungdesa/images/landing-page/image_17_cnjn6x.png" alt="">
 
         </div>
                 <v-row justify="center" align="center" class="v-landing-page__csr-btn-group">
-            <v-btn color="#F58328" width="250" dark class="px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2 mr-5 mt-2">Bekerjasama Bersama Kami</v-btn>
+            <v-btn color="#F58328" width="200" dark class="px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2 mt-2 mr-5 v-landing-page__csr-btn-1">Bekerjasama Bersama Kami</v-btn>
             <v-btn color="#FFFFFF" width="150" dark class="px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2 u-color-29291e mt-2">Tonton Video</v-btn>
           </v-row>
     </div>
