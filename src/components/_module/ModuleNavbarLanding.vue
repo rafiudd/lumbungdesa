@@ -5,39 +5,39 @@
   >
     <v-container class="pt-4 pb-4">
       <v-layout align-center justify-space-between>
-        <div class="m-navbar-landing__logo u-pointer mt-2" @click="goToSection('header')">
+        <div class="m-navbar-landing__logo u-pointer mt-2" @click="goToSection('/')">
           <img :src="logo" alt="Logo" />
         </div>
 
         <div class="m-navbar-landing__lists align-center justify-between d-none d-md-flex">
           <div
             class="list--item mx-3"
-            @click="goToSection('about-us')"
-            :class="{ 'active--nav': getActive('about-us') }"
+            @click="goToSection('produk')"
+            :class="{ 'active--nav': getActive('produk') }"
           >
             <p class="mb-0 pb-0 u-fs-14">Produk Desa</p>
           </div>
-          <div class="list--item mx-3" @click="goToSection('service')" :class="{ 'active--nav': getActive('service') }">
+          <div class="list--item mx-3" @click="goToSection('pelatihan')" :class="{ 'active--nav': getActive('pelatihan') }">
             <p class="mb-0 pb-0 u-fs-14">Pelatihan Keterampilan</p>
           </div>
           <div
             class="list--item mx-3"
-            @click="goToSection('testimonials')"
-            :class="{ 'active--nav': getActive('testimonials') }"
+            @click="goToSection('desa-budaya')"
+            :class="{ 'active--nav': getActive('desa-budaya') }"
           >
             <p class="mb-0 pb-0 u-fs-14">Desa Budaya</p>
           </div>
           <div
             class="list--item mx-3"
-            @click="goToSection('contact-us')"
-            :class="{ 'active--nav': getActive('contact-us') }"
+            @click="goToSection('donasi')"
+            :class="{ 'active--nav': getActive('donasi') }"
           >
             <p class="mb-0 pb-0 u-fs-14">Donasi</p>
           </div>
           <div
             class="list--item mx-3"
-            @click="goToSection('contact-us')"
-            :class="{ 'active--nav': getActive('contact-us') }"
+            @click="goToSection('csr')"
+            :class="{ 'active--nav': getActive('csr') }"
           >
             <p class="mb-0 pb-0 u-fs-14">CSR</p>
           </div>
@@ -64,22 +64,19 @@
               </v-btn>
             </template>
             <v-list>
-              <v-list-item @click="goToSection('about-us')">
+              <v-list-item @click="goToSection('produk')">
                 <v-list-item-title class="u-fs-14">Produk Desa</v-list-item-title>
               </v-list-item>
-              <v-list-item @click="goToSection('service')">
+              <v-list-item @click="goToSection('pelatihan')">
                 <v-list-item-title class="u-fs-14">Pelatihan Keterampilan</v-list-item-title>
               </v-list-item>
-              <v-list-item @click="goToSection('testimonials')">
-                <v-list-item-title class="u-fs-14">Testimonials</v-list-item-title>
-              </v-list-item>
-              <v-list-item @click="goToSection('contact-us')">
+              <v-list-item @click="goToSection('desa-budaya')">
                 <v-list-item-title class="u-fs-14">Desa Budaya</v-list-item-title>
               </v-list-item>
-              <v-list-item @click="goToHome()">
+              <v-list-item @click="goToSection('donasi')">
                 <v-list-item-title class="u-fs-14">Donasi</v-list-item-title>
               </v-list-item>
-              <v-list-item @click="goToDashboard()">
+              <v-list-item @click="goToSection('csr')">
                 <v-list-item-title class="u-fs-14">CSR</v-list-item-title>
               </v-list-item>
               <v-list-item>
@@ -114,7 +111,9 @@ export default {
       isScrolled: false,
     }
   },
-
+  props: [
+    'background'
+  ],
   computed: {
     ...mapGetters('users', ['isExistProfiles', 'userRole']),
 
@@ -125,14 +124,25 @@ export default {
       return 'Login'
     },
     logo() {
-        return this.scrollPosition > 98
+        if(this.background === 'white') {
+          return 'https://res.cloudinary.com/duh8crgew/image/upload/v1662866966/lumbungdesa/images/logo/colored_logo_trdx7e.svg'
+        } else {
+          return this.scrollPosition > 98
                ? 'https://res.cloudinary.com/duh8crgew/image/upload/v1662866966/lumbungdesa/images/logo/colored_logo_trdx7e.svg'
                : 'https://res.cloudinary.com/duh8crgew/image/upload/v1662866961/lumbungdesa/images/logo/logo_potrhm.svg';
+        }
+        
     }
   },
 
   mounted() {
-    window.addEventListener('scroll', this.updateScroll)
+    if(this.background === 'white') {
+      // eslint-disable-next-line no-console
+      console.log('asd')
+      this.scrollPosition = 100
+    } else {
+      window.addEventListener('scroll', this.updateScroll)
+    }
   },
 
   methods: {
@@ -157,22 +167,6 @@ export default {
         )
       }
       return false
-    },
-
-    goToAuth() {
-      if (this.isExistProfiles) {
-        this.removeProfiles()
-        return
-      }
-      this.$router.push({ name: 'auth' })
-    },
-
-    goToHome() {
-      this.$router.push({ name: 'home' })
-    },
-
-    goToDashboard() {
-      this.$router.push({ name: 'content' })
     },
   },
 }

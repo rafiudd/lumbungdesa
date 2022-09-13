@@ -13,11 +13,12 @@ export default {
   },
   methods: {
     goToSection(id) {
-      const elementPosition = document.getElementById(id).offsetTop
-      window.scrollTo({
-        top: elementPosition - 150, //add your necessary value
-        behavior: 'smooth', //Smooth transition to roll
-      })
+      // const elementPosition = document.getElementById(id).offsetTop
+      // window.scrollTo({
+      //   top: elementPosition - 150, //add your necessary value
+      //   behavior: 'smooth', //Smooth transition to roll
+      // })
+      location.href=id
     },
 
     formatDate(date) {
