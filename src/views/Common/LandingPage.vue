@@ -22,7 +22,7 @@
     <div class="v-landing-page__product">
       <v-container mt-0 pt-0>
         <ModuleLihatSemua title="Produk Terbaik Desa" description="LumbungDesa mempromosikan produk desa terbaik dari seluruh desa di Indonesia kepada dunia sehingga bisa dikenal mayarakat luas" href="/produk" page="home" />
-        <ModuleProductsHome />
+        <ModuleProductsHome page="home" />
         <v-flex mt-10>
           <h3 class="u-fs-24 justify-center text-center">Kerajinan Lidi Khas Banyumas</h3>
           <v-row justify="center" align="center">

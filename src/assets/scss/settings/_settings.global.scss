@@ -46,7 +46,9 @@ $break-md: 959px;
 $break-sm: 599px;
 $font_secondary: "Avenir";
 
-
+input, option, input::placeholder {
+    font-family: 'Avenir' !important;
+}
 @media (max-width: 1264px){
     .container{
         width: 100% !important;
