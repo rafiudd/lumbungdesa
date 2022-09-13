@@ -1,0 +1,72 @@
+.v-product {
+  &__container {
+    padding-top: 150px;
+    height: auto;
+
+    h3 {
+      font-weight: 600 !important;
+    }
+    h1, h3, p {
+      font-family: "Avenir";
+      color: #29291e;
+    }
+
+    p {
+      font-weight: 400;
+    }
+
+    .row .flex:first-child {
+      padding-left: 0px !important;
+    }
+    
+    .row .flex:last-child {
+      padding-right: 0px !important;
+    }
+
+    .v-image {
+      height: 540px;
+    }
+
+    .v-landing-page__product-label {
+      margin-right: 14px !important;
+      font-family: 'Avenir';
+    }
+
+    .v-landing-page__product-price {
+      font-family: 'Avenir';
+      font-weight: bold;
+    }
+
+    @include bp(0, $break-md) {
+      background-position-y: 0;
+      padding-top: 106px;
+
+
+      .row .flex:first-child {
+        padding-left: 0px !important;
+      }
+      
+      .row .flex:last-child {
+        padding-right: 0px !important;
+      }
+      .v-image {
+        height: 300px;
+      }
+    }
+
+
+    @include bp(0, $break-sm) {
+      .row .flex:nth-child(odd) {
+        padding-left: 0px !important;
+      }
+      
+      .row .flex:nth-child(even) {
+        padding-right: 0px !important;
+      }
+
+      .v-image {
+        height: 50%;
+      }
+    }
+  }
+}

@@ -21,7 +21,7 @@
     </div>
     <div class="v-landing-page__product">
       <v-container mt-0 pt-0>
-        <ModuleLihatSemua title="Produk Terbaik Desa" description="LumbungDesa mempromosikan produk desa terbaik dari seluruh desa di Indonesia kepada dunia sehingga bisa dikenal mayarakat luas" href="" />
+        <ModuleLihatSemua title="Produk Terbaik Desa" description="LumbungDesa mempromosikan produk desa terbaik dari seluruh desa di Indonesia kepada dunia sehingga bisa dikenal mayarakat luas" href="/produk" page="home" />
         <ModuleProductsHome />
         <v-flex mt-10>
           <h3 class="u-fs-24 justify-center text-center">Kerajinan Lidi Khas Banyumas</h3>
@@ -62,8 +62,8 @@
     </div>
     <div class="v-landing-page__keterampilan">
       <v-container mt-0 pt-0>
-        <ModuleLihatSemua title="Pelatihan Keterampilan" description="LumbungDesa menyediakan berbagai pelatihan keterampilan secara online maupun offline tanpa biaya 100% gratis." href="" />
-        <ModulePelatihan pages="home" />
+        <ModuleLihatSemua title="Pelatihan Keterampilan" description="LumbungDesa menyediakan berbagai pelatihan keterampilan secara online maupun offline tanpa biaya 100% gratis." href="/pelatihan" page="home" />
+        <ModulePelatihan page="home" />
       </v-container>
     </div>
     <br><br><br><br>
@@ -97,7 +97,7 @@
     </div>
     <div class="v-landing-page__desa">
       <v-container mt-0 pt-0>
-        <ModuleLihatSemua title="Desa Budaya" description="Desa Berdaya dengan Budaya yang ada. Jangan sampai budaya desa menghilang, sekarang semua terdokumentasi di LumbungDesa" href="" />
+        <ModuleLihatSemua title="Desa Budaya" description="Desa Berdaya dengan Budaya yang ada. Jangan sampai budaya desa menghilang, sekarang semua terdokumentasi di LumbungDesa" href="/desa-budaya" page="home" />
       </v-container>
       <ModuleBackgroundDesaBudaya />
     </div>
@@ -108,7 +108,7 @@
           <p class="mt-4 u-fs-18 u-line-height-30 u-fs-md-16"> Kami butuh bantuanmu, setiap rupiah yang kamu berikan sangat berarti untuk kami. Ayo bersama membantu pembangunan masyarakat desa</p>
         </div>
       </v-row>
-      <ModuleDonasi pages="home" />
+      <ModuleDonasi page="home" />
     </div>
     <ModuleCSR />
     <ModuleFooter />

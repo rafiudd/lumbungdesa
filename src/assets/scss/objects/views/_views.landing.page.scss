@@ -32,7 +32,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 286px;
-    height: 100vh;
+    height: 840px;
     @include bp(0, $break-md) {
       background-position-y: 0;
       padding-top: 106px;
@@ -63,7 +63,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 15%;
-    height: 100vh;
+    height: 840px;
 
     &__content {
       width: 65%;
