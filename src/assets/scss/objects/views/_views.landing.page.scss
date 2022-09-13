@@ -489,6 +489,37 @@
       }
     }
   }
+
+  &__csr {
+
+    .v-landing-page__csr-btn-group {
+      margin-top: -150px !important;
+      margin-bottom: 300px;
+    }
+    @include bp(0, $break-md) {
+
+    }
+
+    &__content {
+      // background-color: #ffffff;
+      width: 60%;
+      // padding: 40px;
+      margin-top: 200px;
+
+      @include bp(0, $break-md) {
+        margin-top: 60px;
+      }
+
+      h1, p {
+        font-family: "Avenir";
+        color: #29291e;
+      }
+
+      p {
+        font-weight: 400;
+      }
+    }
+  }
   .tagar {
     font-family: 'Avenir';
     font-style: normal;
