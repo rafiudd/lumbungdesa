@@ -33,14 +33,11 @@
     background-image: url('https://res.cloudinary.com/duh8crgew/image/upload/v1662876320/lumbungdesa/images/landing-page/about_umkxzy.png');
     background-size: cover;
     background-repeat: no-repeat;
-    // padding-bottom: 186px;
     padding-top: 286px;
     height: 90vh;
-    // background-position-y: -100px;
-
     @include bp(0, $break-md) {
       background-position-y: 0;
-    padding-top: 106px;
+      padding-top: 106px;
     }
 
     &__content {
@@ -314,7 +311,7 @@
 
   &__desa {
     // padding-top: 10vh;
-    padding-bottom: 50vh;
+    // padding-bottom: 90vh;
     height: auto;
 
     h3 {
@@ -349,6 +346,8 @@
       padding: 75px 60px;
     }
     @include bp(0, $break-sm) {
+      padding-bottom: 50vh;
+      
       .v-landing-page__desa-img {
         width: 100%;
       }
@@ -405,6 +404,91 @@
     }
   }
 
+  &__donasi {
+    .v-card__text {
+      font-family: 'Avenir';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #D3A263 !important;
+    }
+
+    .v-card__title {
+      font-family: 'Avenir';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 22px;
+      /* Dark */
+
+      color: #29293E;
+      padding-top: 0px !important;
+      padding-right: 45px !important;
+    }
+
+    .harga {
+      font-family: 'Avenir';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 25px;
+      display: flex;
+      color: #F58328;
+      margin-bottom: 0px;
+    }
+    .days {
+      font-family: 'Avenir';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 25px;
+      color: #29291E;
+      margin-bottom: 0px;
+    }
+
+    @include bp(0, $break-md) {
+      .v-card__title {
+        padding-right: 5px !important;
+      }
+
+      .days {
+        // text-align: left;
+        // margin-bottom: 0px;
+        // padding: 0px;
+      }
+
+      .layout-card {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        padding: 0px !important;
+      }
+      .flex-days {
+        // padding-top: 0px !important;
+      }
+    }
+
+    &__content {
+      // background-color: #ffffff;
+      width: 65%;
+      padding: 40px;
+      margin-top: 850px;
+
+      @include bp(0, $break-md) {
+        margin-top: 60px;
+      }
+
+      h1, p {
+        font-family: "Avenir";
+        color: #29291e;
+      }
+
+      p {
+        font-weight: 400;
+      }
+    }
+  }
   .tagar {
     font-family: 'Avenir';
     font-style: normal;

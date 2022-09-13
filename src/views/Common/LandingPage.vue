@@ -73,7 +73,7 @@
           <v-tab-item v-for="item in items" :key="item.tab">
             <v-card flat>
               <v-container class="v-landing-page_keterampilan-cardlist">
-                <v-row v-for="data in keterampilan" :key="data.title" class="mt-4">
+                <v-row v-for="data in keterampilan" :key="data.title" class="mt-5">
                   <v-col sm="12" md="4" align="left" class="u-no-p v-landing-page_keterampilan-col">
                     <img :src="data.img_url" :alt="data.title">
                   </v-col>
@@ -136,6 +136,117 @@
           <h1 class="v-landing-page__desa-title">Waraney Buaya Warembungan Mihanasa, Sulawesi Utara</h1>
         </v-container>
       </v-layout>
+    </div>
+    <div class="v-landing-page__donasi">
+      <v-row class="mr-0 ml-0" justify="center" align="center">
+        <div class="v-landing-page__donasi__content u-w-md-full-width u-w-52per text-center">
+          <h1 class="font-weight-bold u-fs-44"> Untuk Desa Yang Lebih Baik </h1>
+          <p class="mt-4 u-fs-18 u-line-height-30 u-fs-md-16"> Kami butuh bantuanmu, setiap rupiah yang kamu berikan sangat berarti untuk kami. Ayo bersama membantu pembangunan masyarakat desa</p>
+        </div>
+      </v-row>
+      <v-container mt-0 pt-0>
+        <v-container fluid grid-list-xl>
+          <v-layout row wrap>
+
+            <v-flex xs12 sm3 md3 xl3>
+              <v-card>
+                <v-img src="https://res.cloudinary.com/duh8crgew/image/upload/v1663001331/lumbungdesa/images/landing-page/image_13_uyrrox.png"></v-img>
+                <v-card-text> Desa Jatilawang, <br> Banyumas </v-card-text>
+                <v-card-title> Dukung Mbok Inem Untuk Mengembangkan Produk Jamu Tradisional </v-card-title>
+                <v-container>
+                  <v-progress-linear
+                    background-color="#DDDDDD"
+                    color="#F58328"
+                    height="6"
+                    rounded
+                    value="15"></v-progress-linear>
+                  <v-layout align-center wrap>
+                    <v-flex>
+                      <p class="harga">Rp. 15.000.000</p>
+                    </v-flex>
+                    <v-flex class="text-right flex-days">
+                      <p class="days">10 hari lagi</p>
+                    </v-flex>
+                  </v-layout>
+                </v-container>
+              </v-card>
+            </v-flex>
+
+            <v-flex xs12 sm3 md3 xl3>
+              <v-card>
+                <v-img src="https://res.cloudinary.com/duh8crgew/image/upload/v1663001331/lumbungdesa/images/landing-page/image_13_uyrrox.png"></v-img>
+                <v-card-text> Desa Jatilawang, <br> Banyumas </v-card-text>
+                <v-card-title> Dukung Mbok Inem Untuk Mengembangkan Produk Jamu Tradisional </v-card-title>
+                <v-container>
+                  <v-progress-linear
+                    background-color="#DDDDDD"
+                    color="#F58328"
+                    height="6"
+                    rounded
+                    value="15"></v-progress-linear>
+                  <v-layout align-center wrap>
+                    <v-flex>
+                      <p class="harga">Rp. 15.000.000</p>
+                    </v-flex>
+                    <v-flex class="text-right flex-days">
+                      <p class="days">10 hari lagi</p>
+                    </v-flex>
+                  </v-layout>
+                </v-container>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 sm3 md3 xl3>
+              <v-card>
+                <v-img src="https://res.cloudinary.com/duh8crgew/image/upload/v1663001331/lumbungdesa/images/landing-page/image_13_uyrrox.png"></v-img>
+                <v-card-text> Desa Jatilawang, <br> Banyumas </v-card-text>
+                <v-card-title> Dukung Mbok Inem Untuk Mengembangkan Produk Jamu Tradisional </v-card-title>
+                <v-container>
+                  <v-progress-linear
+                    background-color="#DDDDDD"
+                    color="#F58328"
+                    height="6"
+                    rounded
+                    value="15"></v-progress-linear>
+                  <v-layout align-center wrap>
+                    <v-flex>
+                      <p class="harga">Rp. 15.000.000</p>
+                    </v-flex>
+                    <v-flex class="text-right flex-days">
+                      <p class="days">10 hari lagi</p>
+                    </v-flex>
+                  </v-layout>
+                </v-container>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 sm3 md3 xl3>
+              <v-card>
+                <v-img src="https://res.cloudinary.com/duh8crgew/image/upload/v1663001331/lumbungdesa/images/landing-page/image_13_uyrrox.png"></v-img>
+                <v-card-text> Desa Jatilawang, <br> Banyumas </v-card-text>
+                <v-card-title> Dukung Mbok Inem Untuk Mengembangkan Produk Jamu Tradisional </v-card-title>
+                <v-container>
+                  <v-progress-linear
+                    background-color="#DDDDDD"
+                    color="#F58328"
+                    height="6"
+                    rounded
+                    value="15"></v-progress-linear>
+                  <v-layout align-center wrap>
+                    <v-flex>
+                      <p class="harga">Rp. 15.000.000</p>
+                    </v-flex>
+                    <v-flex class="text-right flex-days">
+                      <p class="days">10 hari lagi</p>
+                    </v-flex>
+                  </v-layout>
+                </v-container>
+              </v-card>
+            </v-flex>
+          </v-layout>
+          <v-row class="mr-0 ml-0 mt-10" justify="center" align="center">
+            <v-btn color="#F58328" width="200" dark class="px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2">Bantu Sekarang</v-btn>
+          </v-row>
+        </v-container>
+      </v-container>
     </div>
     <ModuleFooter />
   </div>
