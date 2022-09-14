@@ -17,7 +17,7 @@
               <v-col md="5" align="left" class="u-no-p mt-1 v-landing-page_keterampilan-col">
                 <h5>{{ data.title }}</h5>
                 <p class="v-landing-page_keterampilan-cardlist-desc">{{data.description}}</p>
-                <a href="#">Daftar Sekarang</a>
+                <a @click="goHref(data.title)">Daftar Sekarang</a>
               </v-col>
               <v-col class="v-landing-page_keterampilan-cardlist-none u-no-p mt-1" md="3" align="right">
                 <h5>{{data.date}}</h5>
@@ -124,6 +124,14 @@ export default {
     currentRouteName() {
         return this.$route.name;
     }
+  },
+  methods: {
+    goHref(title) {
+      window.open(
+        `https://api.whatsapp.com/send/?phone=%2B6285741892603&text=Halo saya tertarik dengan pelatihan ${title} &type=phone_number&app_absent=0`,
+        '_blank' // <- This is what makes it open in a new window.
+      );
+    },
   },
   mounted() {
     if(this.currentRouteName === 'landingPage') {

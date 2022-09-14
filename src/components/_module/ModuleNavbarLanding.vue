@@ -83,7 +83,7 @@ export default {
       if (this.isExistProfiles) {
         return 'Logout'
       }
-      return 'Login'
+      return 'Hubungi Kami'
     },
     logo() {
         if(this.background === 'white') {
@@ -113,7 +113,12 @@ export default {
     updateScroll() {
       this.scrollPosition = window.scrollY
     },
-
+    goToAuth() {
+      window.open(
+        "https://api.whatsapp.com/send/?phone=%2B6285741892603&text=Halo saya ingin bertanya terkait lumbung desa&type=phone_number&app_absent=0",
+        '_blank' // <- This is what makes it open in a new window.
+      );
+    },
     getActive(id) {
       const elem = document.getElementById(id)
       let offset = 200

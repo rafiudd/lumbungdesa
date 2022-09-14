@@ -3,12 +3,12 @@
     <v-container fluid grid-list-xl>
       <v-layout row wrap>
         <v-flex xs12 sm3 md3 xl3 v-for="data in donasi" :key="data.title">
-          <v-card>
+          <v-card @click="goHref(data.title)">
             <v-img :src="data.img_url"></v-img>
             <v-card-text> {{data.village}} <br> {{data.districts}} </v-card-text>
             <v-card-title class="mr-0" style="word-wrap: break-word; padding-right: 10px !important;"> {{data.title}}  </v-card-title>
             <v-container>
-              <v-progress-linear background-color="#DDDDDD" color="#F58328" height="6" rounded v-model="data.progress" value="data.progress" v-bind="data.progress"></v-progress-linear>
+              <v-progress-linear background-color="#DDDDDD" color="#F58328" height="6" rounded v-model="data.progress" value="data.progress"></v-progress-linear>
               <v-layout align-center wrap>
                 <v-flex>
                   <p class="harga">{{data.donation}}</p>
@@ -22,7 +22,7 @@
         </v-flex>
       </v-layout>
       <v-row :class="{ 'display-none': currentRouteName != 'landingPage' }" class="mr-0 ml-0 mt-10" justify="center" align="center" >
-        <v-btn color="#F58328" width="200" dark class="px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2">Bantu Sekarang</v-btn>
+        <v-btn target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send/?phone=%2B6285741892603&text=Halo%20saya%20ingin%20melakukan donasi&type=phone_number&app_absent=0" color="#F58328" width="200" dark class="px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2">Bantu Sekarang</v-btn>
       </v-row>
     </v-container>
   </v-container>
@@ -222,13 +222,20 @@ export default {
             img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663146171/lumbungdesa/donasi/d-4_sqgj6t.png'
           },
         ],
-        isDialogOpen: false,
     }
   },
   computed: {
     currentRouteName() {
         return this.$route.name;
     }
+  },
+  methods: {
+    goHref(title) {
+      window.open(
+        `https://api.whatsapp.com/send/?phone=%2B6285741892603&text=Halo saya ingin donasi ${title} &type=phone_number&app_absent=0`,
+        '_blank' // <- This is what makes it open in a new window.
+      );
+    },
   },
   mounted() {
     if(this.currentRouteName === 'landingPage') {

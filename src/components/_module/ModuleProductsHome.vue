@@ -2,7 +2,7 @@
   <v-container class="container-products" fluid grid-list-xl>
     <v-layout row wrap>
       <v-flex xs6 sm3 md3 xl3 v-for="item in products" :key="item.product_name">
-        <v-card>
+        <v-card @click="goHref(data.title)">
           <v-img :src="item.img_url"></v-img>
           <v-row justify="center" align="center" class="mr-0 ml-0" :class="{ 'display-none': currentRouteName == 'landingPage' }">
             <v-col align="left" class="pb-0">
@@ -162,6 +162,14 @@ export default {
     currentRouteName() {
         return this.$route.name;
     }
+  },
+  methods: {
+    goHref(title) {
+      window.open(
+        `https://api.whatsapp.com/send/?phone=%2B6285741892603&text=Halo saya tertarik dengan pelatihan ${title} &type=phone_number&app_absent=0`,
+        '_blank' // <- This is what makes it open in a new window.
+      );
+    },
   },
   mounted() {
     if(this.currentRouteName === 'landingPage') {

@@ -11,8 +11,8 @@
       <img class="v-landing-page__csr-img" src="https://res.cloudinary.com/duh8crgew/image/upload/v1663035764/lumbungdesa/images/landing-page/image_17_cnjn6x.png" alt="">
     </div>
     <v-row justify="center" align="center" class="v-landing-page__csr-btn-group">
-      <v-btn color="#F58328" width="200" dark class="px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2 mt-2 mr-5 v-landing-page__csr-btn-1">Bekerjasama Bersama Kami</v-btn>
-      <v-btn color="#FFFFFF" width="160" dark class="px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2 u-color-29291e mt-2">Tonton Video</v-btn>
+      <v-btn target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send/?phone=%2B6285741892603&text=Halo%20saya%20ingin%20tertarik untuk bekerja sama&type=phone_number&app_absent=0" color="#F58328" width="200" dark class="px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2 mt-2 mr-5 v-landing-page__csr-btn-1">Bekerjasama Bersama Kami</v-btn>
+      <v-btn target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=rCE7zZ2PHZk" color="#FFFFFF" width="160" dark class="px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2 u-color-29291e mt-2">Tonton Video</v-btn>
     </v-row>
   </div>
 </template>

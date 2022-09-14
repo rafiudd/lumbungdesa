@@ -40,7 +40,7 @@
             </v-col>
           </v-row>
           <v-row justify="center" align="center">
-            <v-btn color="#F58328" width="300" dark class="px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2">Beli Sekarang</v-btn>
+            <v-btn target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send/?phone=%2B6285741892603&text=Halo%20saya%20tertarik dengan produk kerajinan lidi&type=phone_number&app_absent=0" color="#F58328" width="300" dark class="px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2">Beli Sekarang</v-btn>
           </v-row>
           <br>
           <br>
@@ -57,7 +57,7 @@
         </div>
       </v-row>
       <v-row class="mr-0 ml-0" justify="center" align="center">
-        <v-btn color="#F58328" width="200" dark class="px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2">Dukung Program </v-btn>
+        <v-btn @click="dukungProgram()" color="#F58328" width="200" dark class="px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2">Dukung Program </v-btn>
       </v-row>
     </div>
     <div class="v-landing-page__keterampilan">
@@ -76,7 +76,7 @@
           <v-flex xs12 md5>
             <h1 class="font-weight-bold u-fs-44"> Desa Go Internasional </h1>
             <p class="mt-4 u-fs-18 u-line-height-30 u-fs-md-16 "> Melalui program #desagointernational produk-produk terbaik desa akan dibantu untuk bisa ekspor ke luar negeri, sehingga suatu saat nanti produk lokal Indonesia akan menguasai pasar global. </p>
-            <a class="v-landing-page__desa-international-href" href="#">Lihat Selengkapnya</a>
+            <a class="v-landing-page__desa-international-href" target="_blank" rel="noopener noreferrer" href="https://kemendesa.go.id/berita/view/detil/2370/go-internasional-produk-unggulan-bumdes-dipamerkan-di-malaysia">Lihat Selengkapnya</a>
           </v-flex>
           <v-flex xs12 md7 class="">
             <img class="v-landing-page__desa-international-img" src="https://res.cloudinary.com/duh8crgew/image/upload/v1662952986/lumbungdesa/images/landing-page/image_9_1_n3wlej.png" alt="content_1" />
@@ -93,7 +93,7 @@
           <v-flex xs12 md6 class="u-pl-md-0 u-pl-120 mt-6 mt-md-0">
             <h1 class="font-weight-bold u-fs-44"> Mempersiapkan Desa Budaya yang Berdaya </h1>
             <p class="mt-4 u-fs-18 u-line-height-30 u-fs-md-16 "> Pemajuan kebudayaan desa merupakan platform bersama membangun desa mandiri melalui peningkatan ketahanan budaya dan kontribusi budaya desa di tengah peradaban dunia. </p>
-            <a class="v-landing-page__desa-budaya-href" href="#">Lihat Selengkapnya</a>
+            <a class="v-landing-page__desa-budaya-href"  target="_blank" rel="noopener noreferrer" href="https://www.kemdikbud.go.id/main/blog/2021/01/temu-kenali-potensi-budaya-untuk-desa-pemajuan-kebudayaan">Lihat Selengkapnya</a>
           </v-flex>
         </v-layout>
       </v-container>
@@ -140,6 +140,10 @@ export default {
     ModuleDonasi,
     ModuleCSR
   },
-  methods: {}
+  methods: {
+    dukungProgram() {
+      this._toast = this.$snotify.success('Berhasil Mendukung Program');
+    }
+  }
 }
 </script>
