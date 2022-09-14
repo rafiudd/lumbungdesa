@@ -562,6 +562,16 @@
     align-items: center;
     color: #FFFFFF;
   }
+
+  // .container-products {
+    // .row .flex:first-child {
+    //   padding-left: 0px !important;
+    // }
+    
+    // .row .flex:last-child {
+    //   padding-right: 0px !important;
+    // }
+  // }
   
   @include bp(0, $break-md) {
     .v-landing-page__csr-img {

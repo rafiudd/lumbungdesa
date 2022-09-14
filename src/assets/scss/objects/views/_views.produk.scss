@@ -15,11 +15,23 @@
       font-weight: 400;
     }
 
-    .row .flex:first-child {
+    .row .flex:nth-child(1) {
+      padding-left: 0px !important;
+    }
+
+    .row .flex:nth-child(5) {
+      padding-left: 0px !important;
+    }
+
+    .row .flex:nth-child(9) {
+      padding-left: 0px !important;
+    }
+
+    .row .flex:nth-child(13) {
       padding-left: 0px !important;
     }
     
-    .row .flex:last-child {
+    .row .flex:nth-child(4n) {
       padding-right: 0px !important;
     }
 
