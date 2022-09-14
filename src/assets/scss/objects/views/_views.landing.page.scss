@@ -247,6 +247,8 @@
     }
 
     @include bp(0, $break-sm) {
+      padding-top: 60px;
+
       .v-landing-page_keterampilan-col {
         flex-wrap: wrap;
         -webkit-box-flex: 1;
@@ -462,8 +464,11 @@
       @include bp(0, $break-md) {
         margin-top: 60px;
 
-        .mt-850, .mt-120 {
+        .mt-850 {
           margin-top: 0px !important;
+        }
+        .mt-120 {
+          margin-top: 20px !important;
         }
       }
 
@@ -575,11 +580,19 @@
   
   @include bp(0, $break-md) {
     .v-landing-page__csr-img {
-      width: 100%;
+      width: 90%;
     }
     .mt-160 {
       margin-top: 60px !important;
     }
+    .btn-daftar {
+      width: 100% !important;
+    }
+  }
 
+  @include bp(0, $break-sm){
+    .mt-700 {
+      margin-top: -100px !important;
+    }
   }
 }

@@ -5,7 +5,7 @@
     <div class="v-landing-page__desa">
       <ModuleBackgroundDesaBudaya />
     </div>
-    <div style="margin-top: 700px"></div>
+    <div class="mt-700" style="margin-top: 700px"></div>
 
     <div class="v-landing-page__donasi">
       <v-row class="mr-0 ml-0" justify="center" align="center">

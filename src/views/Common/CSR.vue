@@ -24,11 +24,11 @@
     <v-container class="v-landing-page-box-container">
       <v-row>
         <v-col md="8">
-          <h1>#KeluargaDesa</h1>
+          <h1 class="u-fs-44">#KeluargaDesa</h1>
           <p>Bersama LumbungDesa membantu pemberdayaan masyarakat desa, menuju indonesia yang lebih baik</p>
         </v-col>
         <v-col md="4" class="text-right" align-self="center">
-          <v-btn color="#FFFFFF" width="150" dark class="px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2 u-color-29291e mt-2">Daftar Sekarang</v-btn>
+          <v-btn color="#FFFFFF" width="150" dark class="btn-daftar px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2 u-color-29291e mt-2">Daftar Sekarang</v-btn>
         </v-col>
       </v-row>
     </v-container>
