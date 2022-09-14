@@ -28,6 +28,11 @@ export default {
     ModuleLihatSemua,
     ModuleSearch
   },
+  data() {
+    return {
+      isDialogOpen: false
+    }
+  },
   methods: {}
 }
 </script>

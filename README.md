@@ -1,4 +1,6 @@
-# passionku
+# Lumbung Desa Website
+
+https://lumbungdesa.vercel.app/
 
 ## Project setup
 ```

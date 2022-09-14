@@ -99,8 +99,6 @@ export default {
 
   mounted() {
     if(this.background === 'white') {
-      // eslint-disable-next-line no-console
-      console.log('asd')
       this.scrollPosition = 100
     } else {
       window.addEventListener('scroll', this.updateScroll)

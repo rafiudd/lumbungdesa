@@ -140,6 +140,11 @@ export default {
     ModuleDonasi,
     ModuleCSR
   },
+  data() {
+    return {
+      isDialogOpen: false
+    }
+  },
   methods: {
     dukungProgram() {
       this._toast = this.$snotify.success('Berhasil Mendukung Program');
