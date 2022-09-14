@@ -1,7 +1,11 @@
 <template>
   <div class="v-landing-page" :class="{ 'u-overflow-y-hidden': isDialogOpen }">
     <ModuleNavbarLanding background="white" />
-    <ModuleBackgroundDesaBudaya />
+    <div style="margin-top: 50px"></div>
+    <div class="v-landing-page__desa">
+      <ModuleBackgroundDesaBudaya />
+    </div>
+    <div style="margin-top: 900px"></div>
     <ModuleFooter />
   </div>
 </template>
