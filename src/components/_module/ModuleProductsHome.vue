@@ -168,19 +168,11 @@ export default {
     }
   },
   mounted() {
-    // eslint-disable-next-line no-console
-    console.log(this.currentRouteName)
     if(this.currentRouteName === 'landingPage') {
-      // eslint-disable-next-line no-console
-      console.log("MASOK")
       this.products = this.productsHome
     } else {
       this.products = this.productsAll
     }
-    // eslint-disable-next-line no-console
-    console.log(this.products)
-
   },
-
 }
 </script>

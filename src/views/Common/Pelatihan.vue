@@ -1,7 +1,8 @@
 <template>
-  <div class="v-product" :class="{ 'u-overflow-y-hidden': isDialogOpen }">
+  <div class="v-pelatihan" :class="{ 'u-overflow-y-hidden': isDialogOpen }">
     <ModuleNavbarLanding background="white" />
-    <div class="v-product__container">
+    <br><br>
+    <div class="v-landing-page__keterampilan">
       <v-container mt-0 pt-0>
         <ModuleLihatSemua title="Pelatihan Keterampilan" description="LumbungDesa menyediakan berbagai pelatihan keterampilan secara online maupun offline tanpa biaya 100% gratis." />
         <ModulePelatihan />

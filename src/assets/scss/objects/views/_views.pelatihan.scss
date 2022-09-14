@@ -1,0 +1,121 @@
+.v-pelatihan {
+    &__container {
+      padding-top: 150px;
+      height: auto;
+  
+      h3 {
+        font-weight: 600 !important;
+      }
+      h1, h3, p {
+        font-family: "Avenir";
+        color: #29291e;
+      }
+      .v-pelatihan-tab {
+        font-family: "Avenir" !important;
+      }
+      .v-tab {
+        color: black !important;
+        font-family: "Avenir" !important;
+      }
+      .v-tab--active {
+        color: white !important;
+        background-color: #F58328 !important;
+        font-family: "Avenir" !important;
+      }
+      .v-landing-page__keterampilan-card {
+        border-bottom: 1px solid #D9D9D9 !important;
+      }
+      .v-tabs-slider-wrapper {
+        height: 50px !important;
+        position: absolute !important;
+        z-index: 0;
+      }
+  
+      .v-pelatihan-cardlist {
+        margin: 0px !important;
+      }
+      .v-pelatihan-cardlist img {
+        width: 100%;
+        height: 200px;
+      }
+      .v-pelatihan-cardlist h5, a {
+        margin-left: 20px;
+      }
+  
+      .v-pelatihan-cardlist h5 {
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 40px;
+      }
+      .v-pelatihan-cardlist h4 {
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 27px;
+        color: #D3A263;
+      }
+      .v-pelatihan-cardlist a {
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        text-decoration-line: underline;
+        color: #D3A263;
+      }
+      .v-pelatihan-cardlist-desc {
+        margin-left: 20px;
+      }
+  
+      @include bp(0, $break-sm) {
+        .v-pelatihan-col {
+          flex-wrap: wrap;
+          -webkit-box-flex: 1;
+          -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+        }
+  
+        .v-pelatihan-cardlist-none {
+          display: none;
+        }
+  
+        .v-pelatihan-cardlist h5 {
+          line-height: 30px;
+        }
+        .v-pelatihan-cardlist-desc {
+          margin-left: 0px;
+        }
+        .v-pelatihan-cardlist h5, a {
+          margin-left: 0px;
+        }
+      }
+      h3 {
+        font-weight: 600 !important;
+      }
+      h1, h3, p {
+        font-family: "Avenir";
+        color: #29291e;
+      }
+  
+      p {
+        font-weight: 400;
+      }
+  
+      .row .flex:first-child {
+        padding-left: 0px !important;
+      }
+      
+      .row .flex:last-child {
+        padding-right: 0px !important;
+      }
+  
+      .v-image {
+        height: 540px;
+      }
+    }
+  }
+
+  
