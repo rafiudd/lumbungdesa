@@ -8,17 +8,8 @@
         {{description}}
       </p>
     </v-flex>
-
     <v-flex class="text-right">
-      <v-btn
-        :v-bind="href"
-        :href="href"
-        color="#F58328"
-        dark
-        class="m-lihat-semua__button px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2"
-        :class="{ 'display-none': page != 'home' }"
-        >Lihat Semua</v-btn
-      >
+      <v-btn :v-bind="href" :href="href" color="#F58328" dark class="m-lihat-semua__button px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2" :class="{ 'display-none': page != 'home' }">Lihat Semua</v-btn>
     </v-flex>
   </v-layout>
 </template>

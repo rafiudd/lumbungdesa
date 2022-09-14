@@ -66,7 +66,10 @@
         <ModulePelatihan page="home" />
       </v-container>
     </div>
-    <br><br><br><br>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="v-landing-page__desa-international mt-10" id="desa-international">
       <v-container>
         <v-layout align-center wrap class="v-landing-page__desa-international-flex">
@@ -104,7 +107,7 @@
     <div class="v-landing-page__donasi">
       <v-row class="mr-0 ml-0" justify="center" align="center">
         <div class="v-landing-page__donasi__content u-w-md-full-width u-w-52per text-center">
-        <div style="margin-top: 850px"></div>
+          <div class="mt-850" style="margin-top: 850px"></div>
           <h1 class="font-weight-bold u-fs-44"> Untuk Desa Yang Lebih Baik </h1>
           <p class="mt-4 u-fs-18 u-line-height-30 u-fs-md-16"> Kami butuh bantuanmu, setiap rupiah yang kamu berikan sangat berarti untuk kami. Ayo bersama membantu pembangunan masyarakat desa</p>
         </div>

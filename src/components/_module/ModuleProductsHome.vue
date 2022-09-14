@@ -3,20 +3,16 @@
     <v-layout row wrap>
       <v-flex xs6 sm3 md3 xl3 v-for="item in products" :key="item.product_name">
         <v-card>
-          <v-img src="https://res.cloudinary.com/duh8crgew/image/upload/v1662881612/lumbungdesa/products/1618554350811_1_amqflu.png">
-          </v-img>
-
+          <v-img src="https://res.cloudinary.com/duh8crgew/image/upload/v1662881612/lumbungdesa/products/1618554350811_1_amqflu.png"></v-img>
           <v-row justify="center" align="center" class="mr-0 ml-0" :class="{ 'display-none': currentRouteName == 'landingPage' }">
             <v-col align="left" class="pb-0">
               <span class="v-landing-page__product-label u-fs-12">Mulai Dari</span>
               <p class="text-decoration-line-through">Rp. 6.000</p>
             </v-col>
-
             <v-col align="left" class="pb-0">
               <p class="v-landing-page__product-price u-fs-24">Rp. 4.499</p>
             </v-col>
           </v-row>
-
           <v-row justify="left" align="left" :class="{ 'display-none': currentRouteName == 'landingPage' }">
             <v-col align="left" class="mt-0 pt-0 ml-3">
               <h3>Produk Name</h3>

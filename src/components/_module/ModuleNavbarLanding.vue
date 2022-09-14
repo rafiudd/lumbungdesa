@@ -1,65 +1,35 @@
 <template>
-  <div
-    class="m-navbar-landing u-position-fixed u-top-0 u-z-index-10 u-full-width"
-    :class="{ 'navbar--scrolled': scrollPosition > 98 }"
-  >
+  <div class="m-navbar-landing u-position-fixed u-top-0 u-z-index-10 u-full-width" :class="{ 'navbar--scrolled': scrollPosition > 98 }">
     <v-container class="pt-4 pb-4">
       <v-layout align-center justify-space-between>
         <div class="m-navbar-landing__logo u-pointer mt-2" @click="goToSection('/')">
           <img :src="logo" alt="Logo" />
         </div>
-
         <div class="m-navbar-landing__lists align-center justify-between d-none d-md-flex">
-          <div
-            class="list--item mx-3"
-            @click="goToSection('produk')"
-            :class="{ 'active--nav': getActive('produk') }"
-          >
+          <div class="list--item mx-3" @click="goToSection('produk')" :class="{ 'active--nav': getActive('produk') }">
             <p class="mb-0 pb-0 u-fs-14">Produk Desa</p>
           </div>
           <div class="list--item mx-3" @click="goToSection('pelatihan')" :class="{ 'active--nav': getActive('pelatihan') }">
             <p class="mb-0 pb-0 u-fs-14">Pelatihan Keterampilan</p>
           </div>
-          <div
-            class="list--item mx-3"
-            @click="goToSection('desa-budaya')"
-            :class="{ 'active--nav': getActive('desa-budaya') }"
-          >
+          <div class="list--item mx-3" @click="goToSection('desa-budaya')" :class="{ 'active--nav': getActive('desa-budaya') }">
             <p class="mb-0 pb-0 u-fs-14">Desa Budaya</p>
           </div>
-          <div
-            class="list--item mx-3"
-            @click="goToSection('donasi')"
-            :class="{ 'active--nav': getActive('donasi') }"
-          >
+          <div class="list--item mx-3" @click="goToSection('donasi')" :class="{ 'active--nav': getActive('donasi') }">
             <p class="mb-0 pb-0 u-fs-14">Donasi</p>
           </div>
-          <div
-            class="list--item mx-3"
-            @click="goToSection('csr')"
-            :class="{ 'active--nav': getActive('csr') }"
-          >
+          <div class="list--item mx-3" @click="goToSection('csr')" :class="{ 'active--nav': getActive('csr') }">
             <p class="mb-0 pb-0 u-fs-14">CSR</p>
           </div>
         </div>
-
         <div class="m-navbar-landing__lists align-center justify-between d-none d-md-flex">
-          <v-btn
-            color="#F58328"
-            dark
-            depressed
-            class="ml-3 px-7 u-letter-spacing-0 u-fs-14 no-uppercase button--login u-radius-3"
-            @click="goToAuth()"
-            >{{ authActionText }}</v-btn
-          >
+          <v-btn color="#F58328" dark depressed class="ml-3 px-7 u-letter-spacing-0 u-fs-14 no-uppercase button--login u-radius-3" @click="goToAuth()">{{ authActionText }}</v-btn>
         </div>
-
         <div class="d-block d-md-none">
           <v-menu transition="slide-y-transition" bottom nudge-bottom="45">
             <template v-slot:activator="{ on, attrs }">
               <v-btn icon>
-                <v-icon :color="scrollPosition > 98 ? 'black' : 'white'" dark v-bind="attrs" v-on="on">{{
-                  icons.mdiMenu
+                <v-icon :color="scrollPosition > 98 ? 'black' : 'white'" dark v-bind="attrs" v-on="on">{{ icons.mdiMenu
                 }}</v-icon>
               </v-btn>
             </template>
@@ -80,15 +50,7 @@
                 <v-list-item-title class="u-fs-14">CSR</v-list-item-title>
               </v-list-item>
               <v-list-item>
-                <v-btn
-                  color="#F58328"
-                  dark
-                  rounded
-                  depressed
-                  class="u-fs-14 button--login no-uppercase u-radius-3"
-                  @click="goToAuth()"
-                  >{{ authActionText }}</v-btn
-                >
+                <v-btn color="#F58328" dark rounded depressed class="u-fs-14 button--login no-uppercase u-radius-3" @click="goToAuth()">{{ authActionText }}</v-btn>
               </v-list-item>
             </v-list>
           </v-menu>
