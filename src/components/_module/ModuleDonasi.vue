@@ -4,7 +4,7 @@
       <v-layout row wrap>
         <v-flex xs12 sm3 md3 xl3 v-for="data in donasi" :key="data.title">
           <v-card>
-            <v-img src="https://res.cloudinary.com/duh8crgew/image/upload/v1663001331/lumbungdesa/images/landing-page/image_13_uyrrox.png"></v-img>
+            <v-img :src="data.img_url"></v-img>
             <v-card-text> {{data.village}} <br> {{data.districts}} </v-card-text>
             <v-card-title> {{data.title}} </v-card-title>
             <v-container>
@@ -40,148 +40,148 @@ export default {
         donasi: [],
         donasiAll: [
           {
-            title: 'Pelatihan Menjadi Barista',
+            title: 'Dukung Mbok Inem Untuk Mengembangkan Produk Jamu Tradisional',
             donation: 'Rp 15.000.000',
             progress: "15",
             date: '10 Hari Lagi',
             village: 'DESA GENTAWANGI',
             districts: 'YOGYAKARTA',
-            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1662915710/lumbungdesa/pelatihan/pelatihan-1_xot6hf.png'
+            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663146435/lumbungdesa/donasi/d-1_pdug3d.png'
           },
           {
-            title: 'Pelatihan Menjadi Barista',
+            title: 'Dukung Mbok Inem Untuk Mengembangkan Produk Jamu Tradisional',
             donation: 'Rp 15.000.000',
             progress: "15",
             date: '10 Hari Lagi',
             village: 'DESA GENTAWANGI',
             districts: 'YOGYAKARTA',
-            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1662915710/lumbungdesa/pelatihan/pelatihan-1_xot6hf.png'
+            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663146171/lumbungdesa/donasi/d-2_suqfmf.png'
           },
           {
-            title: 'Pelatihan Menjadi Barista',
+            title: 'Dukung Mbok Inem Untuk Mengembangkan Produk Jamu Tradisional',
             donation: 'Rp 15.000.000',
             progress: "15",
             date: '10 Hari Lagi',
             village: 'DESA GENTAWANGI',
             districts: 'YOGYAKARTA',
-            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1662915710/lumbungdesa/pelatihan/pelatihan-1_xot6hf.png'
+            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663146170/lumbungdesa/donasi/d-3_rae0vf.png'
           },
           {
-            title: 'Pelatihan Menjadi Barista',
+            title: 'Dukung Mbok Inem Untuk Mengembangkan Produk Jamu Tradisional',
             donation: 'Rp 15.000.000',
             progress: "15",
             date: '10 Hari Lagi',
             village: 'DESA GENTAWANGI',
             districts: 'YOGYAKARTA',
-            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1662915710/lumbungdesa/pelatihan/pelatihan-1_xot6hf.png'
+            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663146171/lumbungdesa/donasi/d-4_sqgj6t.png'
           },
           {
-            title: 'Pelatihan Menjadi Barista',
+            title: 'Dukung Mbok Inem Untuk Mengembangkan Produk Jamu Tradisional',
             donation: 'Rp 15.000.000',
             progress: "15",
             date: '10 Hari Lagi',
             village: 'DESA GENTAWANGI',
             districts: 'YOGYAKARTA',
-            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1662915710/lumbungdesa/pelatihan/pelatihan-1_xot6hf.png'
+            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663146170/lumbungdesa/donasi/d-5_ggoejj.png'
           },
           {
-            title: 'Pelatihan Menjadi Barista',
+            title: 'Dukung Mbok Inem Untuk Mengembangkan Produk Jamu Tradisional',
             donation: 'Rp 15.000.000',
             progress: "15",
             date: '10 Hari Lagi',
             village: 'DESA GENTAWANGI',
             districts: 'YOGYAKARTA',
-            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1662915710/lumbungdesa/pelatihan/pelatihan-1_xot6hf.png'
+            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663146172/lumbungdesa/donasi/d-6_mynq1l.png'
           },
           {
-            title: 'Pelatihan Menjadi Barista',
+            title: 'Dukung Mbok Inem Untuk Mengembangkan Produk Jamu Tradisional',
             donation: 'Rp 15.000.000',
             progress: "15",
             date: '10 Hari Lagi',
             village: 'DESA GENTAWANGI',
             districts: 'YOGYAKARTA',
-            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1662915710/lumbungdesa/pelatihan/pelatihan-1_xot6hf.png'
+            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663146170/lumbungdesa/donasi/d-7_nceccc.png'
           },
           {
-            title: 'Pelatihan Menjadi Barista',
+            title: 'Dukung Mbok Inem Untuk Mengembangkan Produk Jamu Tradisional',
             donation: 'Rp 15.000.000',
             progress: "15",
             date: '10 Hari Lagi',
             village: 'DESA GENTAWANGI',
             districts: 'YOGYAKARTA',
-            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1662915710/lumbungdesa/pelatihan/pelatihan-1_xot6hf.png'
-          },
-{
-            title: 'Pelatihan Menjadi Barista',
-            donation: 'Rp 15.000.000',
-            progress: "15",
-            date: '10 Hari Lagi',
-            village: 'DESA GENTAWANGI',
-            districts: 'YOGYAKARTA',
-            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1662915710/lumbungdesa/pelatihan/pelatihan-1_xot6hf.png'
+            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663146169/lumbungdesa/donasi/d-8_qdxb2d.png'
           },
           {
-            title: 'Pelatihan Menjadi Barista',
+            title: 'Dukung Mbok Inem Untuk Mengembangkan Produk Jamu Tradisional',
             donation: 'Rp 15.000.000',
             progress: "15",
             date: '10 Hari Lagi',
             village: 'DESA GENTAWANGI',
             districts: 'YOGYAKARTA',
-            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1662915710/lumbungdesa/pelatihan/pelatihan-1_xot6hf.png'
+            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663146169/lumbungdesa/donasi/d-9_fkegdm.png'
           },
           {
-            title: 'Pelatihan Menjadi Barista',
+            title: 'Dukung Mbok Inem Untuk Mengembangkan Produk Jamu Tradisional',
             donation: 'Rp 15.000.000',
             progress: "15",
             date: '10 Hari Lagi',
             village: 'DESA GENTAWANGI',
             districts: 'YOGYAKARTA',
-            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1662915710/lumbungdesa/pelatihan/pelatihan-1_xot6hf.png'
+            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663146169/lumbungdesa/donasi/d-10_yj859p.png'
           },
           {
-            title: 'Pelatihan Menjadi Barista',
+            title: 'Dukung Mbok Inem Untuk Mengembangkan Produk Jamu Tradisional',
             donation: 'Rp 15.000.000',
             progress: "15",
             date: '10 Hari Lagi',
             village: 'DESA GENTAWANGI',
             districts: 'YOGYAKARTA',
-            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1662915710/lumbungdesa/pelatihan/pelatihan-1_xot6hf.png'
-          },
-{
-            title: 'Pelatihan Menjadi Barista',
-            donation: 'Rp 15.000.000',
-            progress: "15",
-            date: '10 Hari Lagi',
-            village: 'DESA GENTAWANGI',
-            districts: 'YOGYAKARTA',
-            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1662915710/lumbungdesa/pelatihan/pelatihan-1_xot6hf.png'
+            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663146168/lumbungdesa/donasi/d-11_kltfok.png'
           },
           {
-            title: 'Pelatihan Menjadi Barista',
+            title: 'Dukung Mbok Inem Untuk Mengembangkan Produk Jamu Tradisional',
             donation: 'Rp 15.000.000',
             progress: "15",
             date: '10 Hari Lagi',
             village: 'DESA GENTAWANGI',
             districts: 'YOGYAKARTA',
-            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1662915710/lumbungdesa/pelatihan/pelatihan-1_xot6hf.png'
+            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663146167/lumbungdesa/donasi/d-12_qivz9n.png'
           },
           {
-            title: 'Pelatihan Menjadi Barista',
+            title: 'Dukung Mbok Inem Untuk Mengembangkan Produk Jamu Tradisional',
             donation: 'Rp 15.000.000',
             progress: "15",
             date: '10 Hari Lagi',
             village: 'DESA GENTAWANGI',
             districts: 'YOGYAKARTA',
-            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1662915710/lumbungdesa/pelatihan/pelatihan-1_xot6hf.png'
+            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663146168/lumbungdesa/donasi/d-13_ft0uo1.png'
           },
           {
-            title: 'Pelatihan Menjadi Barista',
+            title: 'Dukung Mbok Inem Untuk Mengembangkan Produk Jamu Tradisional',
             donation: 'Rp 15.000.000',
             progress: "15",
             date: '10 Hari Lagi',
             village: 'DESA GENTAWANGI',
             districts: 'YOGYAKARTA',
-            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1662915710/lumbungdesa/pelatihan/pelatihan-1_xot6hf.png'
+            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663146168/lumbungdesa/donasi/d-14_az6fmt.png'
+          },
+          {
+            title: 'Dukung Mbok Inem Untuk Mengembangkan Produk Jamu Tradisional',
+            donation: 'Rp 15.000.000',
+            progress: "15",
+            date: '10 Hari Lagi',
+            village: 'DESA GENTAWANGI',
+            districts: 'YOGYAKARTA',
+            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663146168/lumbungdesa/donasi/d-15_kjbcvy.png'
+          },
+          {
+            title: 'Dukung Mbok Inem Untuk Mengembangkan Produk Jamu Tradisional',
+            donation: 'Rp 15.000.000',
+            progress: "15",
+            date: '10 Hari Lagi',
+            village: 'DESA GENTAWANGI',
+            districts: 'YOGYAKARTA',
+            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663146167/lumbungdesa/donasi/d-16_ier0fd.png'
           },
         ],
         donasiHome: [

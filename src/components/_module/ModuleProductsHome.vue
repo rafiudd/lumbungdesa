@@ -55,76 +55,76 @@ export default {
             img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663141464/lumbungdesa/products/produk-4_pmuor5.png'
           },
           {
-            product_name: 'Piring Lidi Unik Banyumas',
-            discount_price: 'Rp. 4.499',
-            price: 'Rp. 6.000',
+            product_name: 'Gerabah Tangan Kediri',
+            discount_price: 'Rp. 5.400',
+            price: 'Rp. 8.000',
             img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663141465/lumbungdesa/products/produk-5_xvzcpo.png'
           },
           {
-            product_name: 'Mangkok Ikal Banyumas',
-            discount_price: 'Rp. 11.000',
-            price: 'Rp. 14.999',
+            product_name: 'Piring Cantik Mengkilap',
+            discount_price: 'Rp. 15.450',
+            price: 'Rp. 28.499',
             img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663141467/lumbungdesa/products/produk-6_une0r9.png'
           },
           {
-            product_name: 'Mangkok Meliuk Panjang',
-            discount_price: 'Rp. 19.500',
-            price: 'Rp. 26.000',
+            product_name: 'Sapu Lidi Ekslusif Estetik',
+            discount_price: 'Rp. 24.499',
+            price: 'Rp. 69.000',
             img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663141466/lumbungdesa/products/produk-7_tfapfi.png'
           },
           {
-            product_name: 'Mangko Mini Cantik',
-            discount_price: 'Rp. 4.199',
-            price: 'Rp. 5.000',
+            product_name: 'Bantal Batik Banyumasn',
+            discount_price: 'Rp. 11.499',
+            price: 'Rp. 14.000',
             img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663141465/lumbungdesa/products/produk-8_rubtqh.png'
           },
           {
-            product_name: 'Mangko Mini Cantik',
-            discount_price: 'Rp. 4.199',
-            price: 'Rp. 5.000',
+            product_name: 'Keranjang Rotan Tinggi',
+            discount_price: 'Rp. 52.450',
+            price: 'Rp. 69.000',
             img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663144062/lumbungdesa/products/p-9_e3atsh.png'
           },
           {
-            product_name: 'Piring Lidi Unik Banyumas',
-            discount_price: 'Rp. 4.499',
-            price: 'Rp. 6.000',
+            product_name: 'Kursi Rotan Nyaman Empuk',
+            discount_price: 'Rp. 57.500',
+            price: 'Rp. 79.000',
             img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663144065/lumbungdesa/products/p-10_mqxjpj.png'
           },
           {
-            product_name: 'Mangkok Ikal Banyumas',
+            product_name: 'Keranjang Rotan Anyam 5',
             discount_price: 'Rp. 11.000',
             price: 'Rp. 14.999',
             img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663144063/lumbungdesa/products/p-11_y17nyg.png'
           },
           {
-            product_name: 'Mangkok Meliuk Panjang',
+            product_name: 'Keranjang Rotan Bulat',
             discount_price: 'Rp. 19.500',
             price: 'Rp. 26.000',
             img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663144062/lumbungdesa/products/p-12_lmfo7t.png'
           },
           {
-            product_name: 'Mangko Mini Cantik',
-            discount_price: 'Rp. 4.199',
-            price: 'Rp. 5.000',
+            product_name: 'Pot Bunga Anyam',
+            discount_price: 'Rp. 24.199',
+            price: 'Rp. 25.000',
             img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663144062/lumbungdesa/products/p-13_wwteqv.png'
           },
           {
-            product_name: 'Mangkok Ikal Banyumas',
-            discount_price: 'Rp. 11.000',
-            price: 'Rp. 14.999',
+            product_name: 'Meja Ukir Batak',
+            discount_price: 'Rp. 91.000',
+            price: 'Rp. 34.999',
             img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663144062/lumbungdesa/products/p-14_niptlq.png'
           },
           {
-            product_name: 'Mangkok Meliuk Panjang',
+            product_name: 'Layangan Batik Lamongan',
             discount_price: 'Rp. 19.500',
             price: 'Rp. 26.000',
             img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663144062/lumbungdesa/products/p-15_q1lw5v.png'
           },
           {
-            product_name: 'Mangko Mini Cantik',
-            discount_price: 'Rp. 4.199',
-            price: 'Rp. 5.000',
-            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663141465/lumbungdesa/products/produk-8_rubtqh.png'
+            product_name: 'Keranjang Anyam Bambu',
+            discount_price: 'Rp. 44.199',
+            price: 'Rp. 55.000',
+            img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663146889/lumbungdesa/products/p-19_be0gnh.png'
           },
         ],
       productsHome: [
