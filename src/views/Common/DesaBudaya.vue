@@ -11,8 +11,8 @@
       <v-row class="mr-0 ml-0" justify="center" align="center">
         <div class="v-landing-page__donasi__content u-w-md-full-width u-w-52per text-center">
           <div class="mt-120" style="margin-top: 120px"></div>
-          <h1 class="font-weight-bold u-fs-44"> Desa Budaya </h1>
-          <p class="mt-4 u-fs-18 u-line-height-30 u-fs-md-16"> Bersama LumbungDesa Desa Berdaya dengan Budaya yang ada. Jangan sampai budaya desa menghilang tanpa jejak. Sekarang semua terdokumentasi di LumbungDesa</p>
+          <h1 data-aos="fade-left" class="font-weight-bold u-fs-44"> Desa Budaya </h1>
+          <p  data-aos="fade-left" class="mt-4 u-fs-18 u-line-height-30 u-fs-md-16"> Bersama LumbungDesa Desa Berdaya dengan Budaya yang ada. Jangan sampai budaya desa menghilang tanpa jejak. Sekarang semua terdokumentasi di LumbungDesa</p>
         </div>
       </v-row>
       <ModuleDesaBudaya page="home" />

@@ -3,8 +3,8 @@
     <v-row class="mr-0 ml-0" justify="center" align="center">
       <div class="v-landing-page__csr__content u-w-md-full-width u-w-52per text-center">
         <div :class="{ 'mt-160': currentRouteName == 'CSR' }"  :style="{'margin-top': currentRouteName == 'landingPage' ? '200px' : '160px'}"></div>
-        <h1 class="font-weight-bold u-fs-44">Corporate Social Responsibility (CSR)</h1>
-        <p class="mt-4 u-fs-18 u-line-height-30 u-fs-md-16">Membawa program kebaikan perusahaan tidak perlu menyita waktu. Bersama LumbungDesa lebih mudah untuk merencanakan, melaporkan, dan menjalankan program sepanjang tahun yang melibatkan lebih banyak orang dan mendukung tujuan CSR perusahaan.</p>
+        <h1  data-aos="fade-left" data-aos-duration="1200" class="font-weight-bold u-fs-44">Corporate Social Responsibility (CSR)</h1>
+        <p  data-aos="fade-right" data-aos-duration="1200" class="mt-4 u-fs-18 u-line-height-30 u-fs-md-16">Membawa program kebaikan perusahaan tidak perlu menyita waktu. Bersama LumbungDesa lebih mudah untuk merencanakan, melaporkan, dan menjalankan program sepanjang tahun yang melibatkan lebih banyak orang dan mendukung tujuan CSR perusahaan.</p>
       </div>
     </v-row>
     <div justify="center" align="center" class="mt-10">

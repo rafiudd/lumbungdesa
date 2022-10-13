@@ -2,7 +2,7 @@
   <v-container class="container-products" fluid grid-list-xl>
     <v-layout row wrap>
       <v-flex xs6 sm3 md3 xl3 v-for="item in products" :key="item.product_name">
-        <v-card @click="goHref(item.product_name)">
+        <v-card @click="goHref(item.product_name)" data-aos="fade-right" :data-aos-duration="item.delay">
           <v-img :src="item.img_url"></v-img>
           <v-row justify="center" align="center" class="mr-0 ml-0" :class="{ 'display-none': currentRouteName == 'landingPage' }">
             <v-col align="left" class="pb-0">
@@ -130,25 +130,29 @@ export default {
 					product_name: 'Piring Lidi Unik Banyumas',
 					discount_price: 'Rp. 4.499',
 					price: 'Rp. 6.000',
-					img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1662881612/lumbungdesa/products/1618554350811_1_amqflu.png'
+					img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1662881612/lumbungdesa/products/1618554350811_1_amqflu.png',
+					delay: 500
 				},
 				{
 					product_name: 'Mangkok Ikal Banyumas',
 					discount_price: 'Rp. 11.000',
 					price: 'Rp. 14.999',
-					img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663141464/lumbungdesa/products/produk-2_bujrve.png'
+					img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663141464/lumbungdesa/products/produk-2_bujrve.png',
+					delay: 1000
 				},
 				{
 					product_name: 'Mangkok Meliuk Panjang',
 					discount_price: 'Rp. 19.500',
 					price: 'Rp. 26.000',
-					img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663141463/lumbungdesa/products/produk-3_a1x5vh.png'
+					img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663141463/lumbungdesa/products/produk-3_a1x5vh.png',
+					delay: 1500
 				},
 				{
 					product_name: 'Mangko Mini Cantik',
 					discount_price: 'Rp. 4.199',
 					price: 'Rp. 5.000',
-					img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663141464/lumbungdesa/products/produk-4_pmuor5.png'
+					img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663141464/lumbungdesa/products/produk-4_pmuor5.png',
+					delay: 2000
 				},
 			]
 		}
