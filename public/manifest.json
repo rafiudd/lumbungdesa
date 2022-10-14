@@ -4,12 +4,26 @@
   "icons": [{
       "src": "https://res.cloudinary.com/duh8crgew/image/upload/v1663164548/lumbungdesa/ms-icon-144x144_amuzuo.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
       "src": "https://res.cloudinary.com/duh8crgew/image/upload/v1663164548/lumbungdesa/ms-icon-144x144_amuzuo.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://res.cloudinary.com/duh8crgew/image/upload/v1663164548/lumbungdesa/ms-icon-144x144_amuzuo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "img/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "start_url": "/",
