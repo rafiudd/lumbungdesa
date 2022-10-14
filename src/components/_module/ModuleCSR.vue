@@ -8,7 +8,7 @@
       </div>
     </v-row>
     <div justify="center" align="center" class="mt-10">
-      <img class="v-landing-page__csr-img" src="https://res.cloudinary.com/duh8crgew/image/upload/v1663035764/lumbungdesa/images/landing-page/image_17_cnjn6x.png" alt="">
+      <img class="v-landing-page__csr-img" src="https://res.cloudinary.com/duh8crgew/image/upload/v1665724102/lumbungdesa/images/landing-page/image_17_cnjn6x.png" alt="bg">
     </div>
     <v-row justify="center" align="center" class="v-landing-page__csr-btn-group">
       <v-btn target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send/?phone=%2B6285741892603&text=Halo%20saya%20ingin%20tertarik untuk bekerja sama&type=phone_number&app_absent=0" color="#F58328" width="200" dark class="px-7 u-letter-spacing-0 u-fs-14 no-uppercase button-all u-radius-2 mt-2 mr-5 v-landing-page__csr-btn-1">Bekerjasama Bersama Kami</v-btn>
