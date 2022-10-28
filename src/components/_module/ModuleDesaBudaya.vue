@@ -29,14 +29,14 @@ export default {
         ],
         donasi: [
           {
-            title: 'Kampung Budaya Piji Wetan',
+            title: 'Kampung Budaya Piji',
             description: 'Mangkukan adalah simbol kerukunan. Tradisi ini selalu dilakukan oleh warga Kampung Budaya Piji Wetan.....',
             village: 'LAU',
             districts: 'KUDUS, JAWA TENGAH',
             img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663146659/lumbungdesa/desa-budaya/db-1_ezla6t.png'
           },
           {
-            title: 'Cambai Creative Community',
+            title: 'Cambai Creative',
             description: 'Cambai, menurut cerita tokoh masyarakat setempat berasal dari istilah “Cam” yang berarti proses pengecekan timah.....',
             village: 'CAMBAI',
             districts: 'KEPULAUAN BANGKA BELITUNG',
@@ -92,7 +92,7 @@ export default {
             img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663146658/lumbungdesa/desa-budaya/db-9_yrgpmh.png'
           },
           {
-            title: 'Kelompok Tari Fampompar',
+            title: 'Tari Fampompar',
             description: 'Dari Timur Perbatasan NKRI kami memperkenalkan budaya desa kami tercinta Desa Sangliat Dol. Desa ini......',
             village: 'SANGLIAT DOL',
             districts: 'MALUKU TENGGARA BARAT, MALUKU',
@@ -106,7 +106,7 @@ export default {
             img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663146655/lumbungdesa/desa-budaya/db-11_sudfxj.png'
           },
           {
-            title: 'Manunggaling Kawula Gusti',
+            title: 'Manunggaling Kawula',
             description: 'Desa Kemiri Barat adalah salah satu desa di Kecamatan Subah, Kabupaten Batang, Provinsi Jawa Tengah yang terletak.....',
             village: 'KEMIRI BARAT',
             districts: 'BATANG, JAWA TENGAH',
