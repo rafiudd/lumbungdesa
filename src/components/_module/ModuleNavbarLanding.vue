@@ -6,19 +6,19 @@
           <img :src="logo" alt="Logo" />
         </div>
         <div class="m-navbar-landing__lists align-center justify-between d-none d-md-flex">
-          <div class="list--item mx-3" @click="goToSection('produk')" :class="{ 'active--nav': getActive('produk') }">
+          <div class="list--item mx-3" @click="goToSection('produk')" :class="{ 'active--nav': isProduct }">
             <p class="mb-0 pb-0 u-fs-14">Produk Desa</p>
           </div>
-          <div class="list--item mx-3" @click="goToSection('pelatihan')" :class="{ 'active--nav': getActive('pelatihan') }">
+          <div class="list--item mx-3" @click="goToSection('pelatihan')" :class="{ 'active--nav': isPelatihan }">
             <p class="mb-0 pb-0 u-fs-14">Pelatihan Keterampilan</p>
           </div>
-          <div class="list--item mx-3" @click="goToSection('desa-budaya')" :class="{ 'active--nav': getActive('desa-budaya') }">
+          <div class="list--item mx-3" @click="goToSection('desa-budaya')" :class="{ 'active--nav': isDesa }">
             <p class="mb-0 pb-0 u-fs-14">Desa Budaya</p>
           </div>
-          <div class="list--item mx-3" @click="goToSection('donasi')" :class="{ 'active--nav': getActive('donasi') }">
+          <div class="list--item mx-3" @click="goToSection('donasi')" :class="{ 'active--nav': isDonasi }">
             <p class="mb-0 pb-0 u-fs-14">Donasi</p>
           </div>
-          <div class="list--item mx-3" @click="goToSection('csr')" :class="{ 'active--nav': getActive('csr') }">
+          <div class="list--item mx-3" @click="goToSection('csr')" :class="{ 'active--nav': isCSR }">
             <p class="mb-0 pb-0 u-fs-14">CSR</p>
           </div>
         </div>
@@ -71,6 +71,11 @@ export default {
       },
       scrollPosition: null,
       isScrolled: false,
+      isHome: false,
+      isProduct: false,
+      isDesa: false,
+      isDonasi: false,
+      isCSR: false
     }
   },
   props: [
@@ -93,8 +98,10 @@ export default {
                ? 'https://res.cloudinary.com/duh8crgew/image/upload/v1662866966/lumbungdesa/images/logo/colored_logo_trdx7e.svg'
                : 'https://res.cloudinary.com/duh8crgew/image/upload/v1662866961/lumbungdesa/images/logo/logo_potrhm.svg';
         }
-        
-    }
+    },
+    currentRouteName() {
+			return this.$route.name;
+		}
   },
 
   mounted() {
@@ -103,6 +110,29 @@ export default {
     } else {
       window.addEventListener('scroll', this.updateScroll)
     }
+
+    switch (this.currentRouteName) {
+      case 'produk':
+        this.isProduct = true
+        break;
+      case 'pelatihan':
+        this.isPelatihan = true
+        break;
+      case 'desa-budaya':
+        this.isDesa = true
+        break;
+      case 'donasi':
+        this.isDonasi = true
+        break;
+      case 'CSR':
+        this.isCSR = true
+        break;
+      default:
+        break;
+    }
+
+    // eslint-disable-next-line no-console
+    console.log(this.currentRouteName, "ROUTER", this.isProduct)
   },
 
   methods: {

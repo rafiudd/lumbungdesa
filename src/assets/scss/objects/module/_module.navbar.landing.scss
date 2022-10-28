@@ -41,6 +41,9 @@
         transform: scaleX(1);
       }
     }
+    .active--nav p {
+      font-weight: 700;
+    }
     .active--nav {
       p::before {
         visibility: visible;
