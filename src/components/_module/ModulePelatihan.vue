@@ -77,7 +77,7 @@ export default {
 					date: '5 Desember 2022',
 					village: 'DESA BANJAR',
 					districts: 'NUSA TENGGARA TIMUR',
-					img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663131749/lumbungdesa/pelatihan/1618465115515_1_3_ttyduq.png'
+					img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663131745/lumbungdesa/pelatihan/1618465115515_1_1_yt2m4o.png'
 				},
 				{
 					title: 'Pelatihan Membuat Batik Pekalongan',
@@ -93,7 +93,7 @@ export default {
 					date: '1 Januari 2023',
 					village: 'DESA KEDIRI',
 					districts: 'JAWA TIMUR',
-					img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663131745/lumbungdesa/pelatihan/1618465115515_1_1_yt2m4o.png'
+					img_url: 'https://res.cloudinary.com/duh8crgew/image/upload/v1663131749/lumbungdesa/pelatihan/1618465115515_1_3_ttyduq.png'
 				}
 			],
 			keterampilanHome: [{

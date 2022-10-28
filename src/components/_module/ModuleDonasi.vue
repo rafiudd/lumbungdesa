@@ -6,7 +6,7 @@
           <v-card @click="goHref(data.title)">
             <v-img :src="data.img_url"></v-img>
             <v-card-text> {{data.village}} <br> {{data.districts}} </v-card-text>
-            <v-card-title class="mr-0" style="word-wrap: break-word; padding-right: 10px !important;"> {{data.title}}  </v-card-title>
+            <v-card-title class="mr-0" style="word-break: break-word; padding-right: 10px !important;"> {{data.title}}  </v-card-title>
             <v-container>
               <v-progress-linear background-color="#DDDDDD" color="#F58328" height="6" rounded v-model="data.progress" value="data.progress"></v-progress-linear>
               <v-layout align-center wrap>
