@@ -15,13 +15,13 @@
                 <img :src="data.img_url" :alt="data.title">
               </v-col>
               <v-col md="5" align="left" class="u-no-p mt-1 v-landing-page_keterampilan-col">
-                <h5>{{ data.title }}</h5>
+                <h5 style="font-size: 18px; '">{{ data.title }}</h5>
                 <p class="v-landing-page_keterampilan-cardlist-desc">{{data.description}}</p>
-                <a @click="goHref(data.title)">Daftar Sekarang</a>
+                <a style="font-size: 16px; '" @click="goHref(data.title)">Daftar Sekarang</a>
               </v-col>
               <v-col class="v-landing-page_keterampilan-cardlist-none u-no-p mt-1" md="3" align="right">
-                <h5>{{data.date}}</h5>
-                <h4>{{data.village}}, <br> {{data.districts}}
+                <h5 style="font-size: 16px; '">{{data.date}}</h5>
+                <h4 style="font-size: 14px; '">{{data.village}}, <br> {{data.districts}}
                 </h4>
               </v-col>
             </v-row>
